@@ -1,0 +1,35 @@
+body{
+    background: url("/css/img/main_background.jpg") no-repeat ;
+    background-size: cover;
+}
+
+.container_c {
+    width: 960px;
+}
+
+.enter_f{
+    font-size: 16px;
+    margin-top: 192px;
+    margin-bottom: 40px;
+    min-height: 100px;
+    width: 454px;
+    background-color: rgba(255, 255, 255, 0.84);
+    text-align: center;
+    padding: 46px 0 38px 0 ;
+}
+.enter_f .text_f{
+    padding: 44px 0 20px 0;
+    font-size: 22px;
+}
+.enter_f span{
+    color: #187cbb;
+}
+.facebook_btn{
+    margin: 38px 0 36px 0px ;
+}
+
+
+
+
+
+

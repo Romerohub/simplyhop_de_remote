@@ -1,0 +1,262 @@
+.list_items_title{
+    background-color: #fff;
+    height: 92px;
+
+}
+.list_items_title .title{
+    line-height: 36px;
+    margin-bottom: 30px;
+
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #017eba;
+    padding: 31px 0 0 66px;
+}
+
+.list_items_title .title_img{
+    background: url('/css/img/icons_dev2.png') #017eba 0px -389px;
+    height: 37px;
+    margin: 31px 0 0 0;
+    width: 37px;
+    position: absolute;
+
+}
+
+.list_items{
+    float: left;
+    width: 652px;
+    background-color: transparent;
+}
+
+.mitfahrten{
+    text-align: left;
+    margin:16px 0 16px 0;
+}
+
+
+.list_views .view{
+    min-height: 209px;
+    background-color: #fff;
+    padding: 20px 0px 16px 11px;
+
+}
+.list_views .view .user_data {
+    width: 250px;
+    border-right: solid 1px #c4c4c4;
+    height: 160px;
+    display: inline-block;
+}
+.list_views .view .user_data .img{
+    margin: 0px 0 0 55px;
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.list_views .view .user_data .name{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    color:#017eba;
+    margin: 7px 20px 20px 15px;
+}
+.list_views .view .user_data .age{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+    color: #c4c4c4;
+    margin: 0px;
+}
+/** ICONS *****/
+
+.user_data_icons {
+    margin: 11px 0 0 54px;
+}
+.user_data_icons span{
+    width: 26px;
+    height: 22px;
+    display: inline-block;
+}
+.user_data_icons .smoking{
+    background: url('/css/img/icons_dev3.png')no-repeat -33px -181px;
+}
+.user_data_icons .not_smoking{
+    background: url('/css/img/icons_dev3.png')no-repeat -33px -544px;
+}
+.user_data_icons .dog{
+    background: url('/css/img/icons_dev3.png')no-repeat -33px -210px;
+}
+.user_data_icons .not_dog{
+    background: url('/css/img/icons_dev3.png')no-repeat -33px -572px;
+}
+.user_data_icons .musik{
+    background: url('/css/img/icons_dev3.png')no-repeat -33px -239px;
+}
+.user_data_icons .not_musik{
+    background: url('/css/img/icons_dev3.png')no-repeat -33px -601px;
+}
+
+.options_travel .user_data_icons{
+    margin-left: -26px;
+}
+/**** END ICONS *****/
+.list_views .view .user_data .review{
+
+    font-size: 15px;
+    color: #017eba;
+    padding: 0 0 0 19px;
+    margin: 7px 0 0 55px;
+    background: url('/css/img/icons_dev2.png')no-repeat -8px -511px;
+}
+
+
+
+.list_views .view .travel_data{
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 0 0 25px;
+}
+
+.list_views .view .travel_data .data_10{
+    width: 338px;
+    color: #c4c4c4;
+}
+.list_views .view .travel_data .data_10 span.active{
+    color: #337ab7;
+}
+.list_views .view .travel_data .data_12{
+    margin: 14px 0 0 0;
+    padding: 0 0 0 32px;
+    background: url('/css/img/icons_dev2.png')no-repeat -7px -538px;
+}
+.list_views .view .travel_data .data_13{
+    padding: 4px 0 0 32px;
+    background: url('/css/img/icons_dev2.png')no-repeat -9px -566px;
+}
+.list_views .view .travel_data .data_14 span{
+    color: #c4c4c4;
+}
+.list_views .view .travel_data .data_14{
+    padding: 5px 0 0 33px;
+}
+.list_views .view .travel_data .data_15{
+    margin: 5px 0 0 0 ;
+    background: url('/css/img/icons_dev2.png')no-repeat -7px -606px;
+    padding: 0px 0 0 33px;
+}
+.list_views .view .travel_data .data_15 a{
+    text-decoration: underline;
+}
+.list_views .view .travel_data .data_16{
+    padding: 16px 0 0 32px;
+}
+.list_views .view .travel_data .data_16 a{
+    text-decoration: underline;
+}
+
+
+/******** PROFILE RIGHT SIDEBAR**********/
+.profile_block{
+    height: 296px;
+    background-color: #fff;
+    float: left;
+    width: 459px;
+    margin: 0 0 0 29px;
+}
+.profile_block .title_img{
+    background: url('/css/img/icons_dev2.png') #017eba 5px -642px;
+}
+
+.profile_block .p_data .img{
+    margin:-1px 0 0 70px;
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
+
+}
+.profile_block .p_data .data_20{
+    display: inline-block;
+    vertical-align: top;
+    margin:7px 0 0 14px;
+}
+.profile_block .p_data .data_21{
+color: #017eba;
+}
+.profile_block .p_data .data_28{
+    margin: 8px 0 0 67px;
+}
+.profile_block .p_data .data_25 span{
+    float:right;
+    margin-right: 95px;
+    padding: 0 0 0 16px;
+    background: url('/css/img/icons_dev2.png')no-repeat -8px -510px;
+}
+
+/******** pagination **********/
+.list_pager {
+    text-align: center;
+}
+.list_pager .pager{
+    display: inline-block;
+    margin: 0 auto;
+}
+.yiiPager .first, .yiiPager .last{
+    display: none;
+}
+.yiiPager li{
+    border-radius: 0px;
+    float: left;
+}
+.yiiPager li>a{
+    padding: 1px 8px !important;
+    height: 25px;
+    width: 25px;
+    color: #515151;
+    font-size: 15px;
+    border-radius: 0px;
+    background-color: #d3d8dc;
+}
+.selected a{
+    background-color: #017eba !important;
+    color:#fff !important;
+}
+.list_pager .title_l{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+}
+
+
+
+
+/***********/
+.type_user_btn{
+    margin: 0 0 20px 0;
+}
+.type_user_btn a{
+    display: inline-block;
+    width: 164px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 30px 6px 30px;
+    color: #fff;
+    background-color: #c4c4c4;
+    margin-right: 32px;
+}
+.type_user_btn a.active{
+    background-color: #017eba;
+}
+
+
+
+
+
+
+.profile_block_2{
+    float: right;
+    width: 300px;
+}
+

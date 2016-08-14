@@ -1,0 +1,261 @@
+.profile_view{
+    float:left;
+    width: 650px;
+}
+.profile_view a:hover{
+    color: #00c810;
+}
+.profile_view_title{
+    background-color: #fff;
+    height: 86px;
+
+}
+.profile_view_title .title_img{
+    background: url('/css/img/icons_dev2.png') #017eba 4px -684px;
+    height: 37px;
+    margin: 31px 0 0 0;
+    width: 37px;
+    position: absolute;
+}
+.profile_view_title .title{
+    line-height: 36px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #017eba;
+    padding: 31px 0 0 66px;
+}
+.profile_view .pr_data{
+    background-color: #fff;
+    padding: 0 68px 20px 66px;
+}
+.profile_view .pr_data .img{
+    margin: 0 0 0 4px;
+    display: inline-block;
+    width: 158px;
+    height: 158px;
+    border-radius: 100px;
+}
+
+.profile_view .pr_data .data_20 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 13px 0 0 30px;
+}
+.profile_view .pr_data .data_21{
+    font-weight: 900;
+}
+.profile_view .pr_data .data_22{
+    padding: 3px 0 0 0;
+    color: #c4c4c4;
+}
+.profile_view .pr_data .data_23{
+    padding: 4px 0 0 0;
+    color: #c4c4c4;
+}
+.profile_view .pr_data .data_25{
+    padding: 0 0 0 17px;
+    background: url('/css/img/icons_dev2.png') -10px -510px no-repeat;
+}
+.profile_view .pr_data .data_26 .user_data_icons_2{
+    margin: 8px 0 3px -2px;
+}
+.profile_view .pr_data .pr_text_title{
+    margin-top: 50px;
+    color: #017eba;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.profile_view .pr_data .pr_text{
+
+    background-color: #edf2f5;
+    padding: 29px 34px 26px 32px;
+    margin: 14px 0 20px 0;
+}
+/********** COMMENTS *****************/
+.all_reviews_btn{
+    padding: 20px 30px;
+    width: 325px;
+    margin: 0 0 30px 0;
+    height: 61px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    background-color: #00c810;
+    display: inline-block;
+    font-size: 22px;
+}
+.all_reviews_btn:hover{
+    color: #fff;
+}
+.sidebar_comments {
+    float: left;
+    width: 460px;
+    margin: 0 0 0 30px;
+}
+.sidebar_comments  .pr_comments{
+
+}
+.sidebar_comments .comment_view_title{
+    margin-top:0;
+}
+.sidebar_comments .pr_comments_item{
+    max-width: 431px;
+    border-bottom: 0px solid #edf2f5;
+}
+.sidebar_comments .border{
+    margin-left: 0px !important;
+}
+.sidebar_comments .bottom_devider{
+    padding-top: 21px;
+    border-bottom: 1px solid #edf2f5;
+}
+.sidebar_comments .pr_comments_item .bottom_devider1:last-child{
+    border-bottom: 0px solid #edf2f5;
+}
+/*************/
+.comment_view_title{
+    margin: 30px 0 0 0;
+    background-color: #fff;
+    height: 86px;
+
+}
+.comment_view_title .title_img{
+    background: url('/css/img/icons_dev2.png') #017eba -4px -1127px;
+    height: 37px;
+    margin: 31px 0 0 0;
+    width: 37px;
+    position: absolute;
+}
+.comment_view_title .title{
+    line-height: 36px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #017eba;
+    padding: 31px 0 0 66px;
+}
+.pr_comments_list{
+    background-color: #fff;
+}
+.pr_comments_item{
+    background-color: #fff;
+    padding: 0px 20px 20px 58px;
+    border-bottom: 1px solid #edf2f5;
+}
+
+.pr_comments_item .img{
+    background: url('/css/img/icons_dev2.png') no-repeat 0px -1244px;
+    float: left;
+    display:block;
+    border-radius: 56px;
+    height: 82px;
+    width: 83px;
+    margin: 10px 0 0 9px;
+}
+
+.pr_comments_item .info{
+    width: 70%;
+    display:block;
+    float: left;
+    padding: 17px 0 0 16px;
+}
+.pr_comments_item .info .border{
+    margin-left: 54px;
+    border-bottom: 1px solid #edf2f5;
+}
+.pr_comments_item .info .data_1{
+    font-weight: 900;
+    padding: 0 0 8px 0;
+    float:left;
+}
+.pr_comments_item .info .stars{
+    float: right;
+}
+.pr_comments_item .info .stars span{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("/css/img/icons_dev2.png") no-repeat -14px -1781px;
+}
+.pr_comments_item .info .stars span.star{
+    background: url("/css/img/icons_dev2.png") no-repeat -14px -1732px;
+}
+.pr_comments_item .info .data_1{
+    font-weight: 900;
+    padding: 0 0 8px 0;
+    float:left;
+}
+
+.pr_comments_item .info .data_2{
+    color: #c4c4c4;
+}
+.pr_comments_item .info .data_3{
+    padding: 4px 0 0 0px;
+}
+
+/**** Left side bar *************/
+.profile_view_left{
+    margin-left:30px;
+    float: left;
+    width: 460px;
+
+
+}
+
+
+/********** ANALITIC *************/
+
+.analitic_view_title{
+
+
+}
+.analitic_view_title{
+
+    width: 100%;
+    margin: 30px 0 0 0;
+    background-color: #fff;
+    height: 86px;
+
+}
+.analitic_view_title .title_img{
+    background: url('/css/img/icons_dev2.png') #017eba -14px -1509px;
+    height: 37px;
+    margin: 31px 0 0 0;
+    width: 37px;
+    position: absolute;
+}
+.analitic_view_title .title{
+    line-height: 36px;
+    margin-bottom: 30px;
+    font-size: 22px;
+
+    color: #017eba;
+    padding: 31px 0 0 66px;
+}
+.profile_view_left .data{
+    background-color: #fff;
+    padding: 4px 26px 25px 69px;
+}
+.profile_view_left .data div{
+    line-height: 24px;
+}
+
+.profile_edit_btn{
+    display: inline-block;
+    width: 164px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 30px 6px 30px;
+    color: #fff;
+    background-color: #c4c4c4;
+    margin-right: 32px;
+    background-color: #017eba;
+    margin-top: 20px;
+}
+.profile_edit_btn:hover{
+    color: #fff !important;
+    background-color: #00c810;
+}
+
+

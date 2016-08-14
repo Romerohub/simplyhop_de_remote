@@ -1,0 +1,234 @@
+.profile_edit{
+    float:left;
+    width: 650px;
+}
+.profile_edit_title{
+    background-color: #fff;
+    height: 91px;
+    margin: 0px 0 0 0;
+}
+.profile_edit_title .title_img{
+    background: url('/css/img/icons_dev2.png') #017eba 4px -684px;
+    height: 37px;
+    margin: 24px 0 0 0;
+    width: 37px;
+    position: absolute;
+}
+.profile_edit_title .title{
+    line-height: 36px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #017eba;
+    padding: 25px 0 0 66px;
+}
+
+.profile_form{
+    margin: 28px 0 0 0;
+    padding: 36px 28px 28px 68px;
+    background-color: #fff;
+    font-family:  MyriadPro-Regular;
+}
+.profile_form .title{
+    margin: 0px 0 32px 0;
+    color: #017eba;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+/******* START**********/
+.profile_form .row.geschlecht{
+    padding: 9px 0 0 0;
+}
+.profile_form .row.geschlecht .btn{
+    padding: 1px 30px 1px 32px;
+}
+.profile_form .row.geschlecht .radio label.active{
+    background: url("/css/img/icons_dev2.png") no-repeat -9px -294px;
+}
+.profile_form .row.geschlecht .radio label{
+    background: url("/css/img/icons_dev2.png") no-repeat -9px -351px;
+}
+/********* END ********/
+
+.profile_form .row{
+    margin: 0 0 13px 0;
+}
+.profile_form .row .label{
+    padding: 0;
+    width: 125px;
+    text-align: left;
+    float: left;
+}
+.profile_form label{
+    padding:  3px 0 0 0px;
+    margin:  0 0 0 0px;
+    color: #4f4f4f;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.profile_form .row .field{
+    float:left;
+}
+.profile_form .row .field input{
+    width: 359px;
+    padding: 4px;
+    border: 1px solid #7d7d7d;
+}
+.profile_form .row .field textarea{
+    width: 359px;
+    padding: 4px;
+    border: 1px solid #7d7d7d;
+}
+.praferenzen{
+    margin: 0 0 31px 0;
+}
+/****************/
+
+.profile_form .raucher , .profile_form .haustiere , .profile_form .musik  {
+    margin: 0 0 10px 0;
+}
+.profile_form .raucher .label, .profile_form .haustiere .label, .profile_form .musik .label {
+    padding: 7px 0 0 0;
+}
+.profile_form  .radio label{
+    border: 0px solid #fff;
+    background-color: transparent;
+    color: rgb(79, 79, 79);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    padding-left: 28px;
+    font-weight: 100;
+    font-size: 15px;
+
+    background: url("/css/img/icons_dev2.png") no-repeat -9px -346px;
+}
+.profile_form  .radio label.active {
+    background: url("/css/img/icons_dev2.png") no-repeat -9px -289px;
+}
+
+
+
+.profile_form   input[type=submit]{
+    background-color: #017eba;
+    border: solid 0 #fff;
+    padding: 4px 29px 4px 29px;
+    margin-right: -3px;
+    color: #fff;
+    margin-top: -5px;
+    font-size: 15px;
+}
+.profile_form .radio{
+    margin-top: 0%;
+    margin-bottom: 0;
+}
+.profile_form .spec_radio label {
+    border: 2px solid #FFF;
+    background-color: transparent;
+    color: rgb(79, 79, 79);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 44px;
+    padding-left: 40px;
+    font-weight: 100;
+    font-size: 15px;
+    margin-right: 55px;
+    border-radius: 0px;
+    background: url("/css/img/icons_dev3.png") no-repeat -33px -20px;
+}
+.profile_form .spec_radio label.active {
+    border: 2px solid #1d4eff;
+}
+
+.profile_form .raucher .spec_radio label:first-child{
+    background: url("/css/img/icons_dev3.png") no-repeat -33px -20px;
+}
+.profile_form .raucher .spec_radio label:last-child{
+    background: url("/css/img/icons_dev3.png") no-repeat -33px -651px;
+}
+
+.profile_form .haustiere .spec_radio label:first-child{
+    background: url("/css/img/icons_dev3.png") no-repeat -32px -73px;
+}
+.profile_form .haustiere .spec_radio label:last-child{
+    background: url("/css/img/icons_dev3.png") no-repeat -33px -703px;
+}
+
+.profile_form .musik .spec_radio label:first-child{
+    background: url("/css/img/icons_dev3.png") no-repeat -32px -125px;
+}
+.profile_form .musik .spec_radio label:last-child{
+    background: url("/css/img/icons_dev3.png") no-repeat -33px -754px;
+}
+
+.profile_form .date_3 .field input{
+    width: 165px;
+}
+.profile_form .email_3 .field span {
+    display: inline-block;
+    height: 14px;
+    width: 18px;
+    margin-left: 21px;
+    background: url("/css/img/icons_dev2.png") no-repeat -16px -2081px;
+}
+.profile_form .email_3 .field input{
+    width: 292px;
+}
+.form_uber_mich textarea{
+    height: 100px;
+}
+/****** PIC UPLOAD ******/
+.upload_user_f{
+    margin: 55px 0 0 0 !important
+}
+.upload_user_f .label{
+    padding: 29px 0 0 0;
+}
+.upload_user_f .field{
+    vertical-align: top;
+}
+.upload_user_f .img{
+    width: 83px;
+    display: inline-block;
+    height: 82px;
+    border-radius: 53px;
+    background: url("/css/img/icons_dev2.png") no-repeat -9px -1894px;
+}
+.upload_user_f .mid_data{
+    margin: 15px 0 0 13px;
+    display: inline-block;
+    vertical-align: top;
+}
+.upload_user_f .button{
+    width: 164px;
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+    height: 30px;
+    background-color: #017eba;
+    color: #fff;
+    line-height: 30px;
+    margin: 0 0 6px 0;
+    padding: 2px 20px 0 34px;
+}
+.upload_user_f .sh_desc{
+    font-size: 13px;
+    color: #c4c4c4;
+
+}
+.upload_user_f  .del{
+    cursor: pointer;
+    vertical-align: top;
+    background: url("/css/img/icons_dev2.png") no-repeat -15px -2026px;
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+    margin: 22px 21px;
+}
+
+.auto_foto .img {
+    background: url("/css/img/icons_dev2.png") no-repeat -9px -2141px;
+}
+

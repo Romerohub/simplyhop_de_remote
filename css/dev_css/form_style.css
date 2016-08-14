@@ -1,0 +1,483 @@
+.error{
+    border: 1px solid #CC0000;
+}
+
+
+.form_form{
+    font-size: 15px;
+    color: #4f4f4f;
+}
+.form_form a{
+    font-size: 14px;
+}
+.form_line{
+    margin-left: 67px;
+    margin-bottom: 10px;
+}
+
+.form_label{
+    display: inline-block;
+    width:20%;
+}
+.form_form input[type=text]{
+    width: 194px;
+    margin:0;
+    border: 1px solid #7d7d7d;
+}
+.form_input_1{
+    display: inline-block;
+    width: 36%;
+}
+.form_input_2{
+    display: inline-block;
+    width: 36%;
+}
+.form_form .separate{
+    display: inline-block;
+    width: 4%;
+}
+
+.form_line.standart input{
+    padding: 4px 12px 1px 10px;
+    margin: 1px 0 1px 0;
+}
+
+.form_line.date .form_input_1 input{
+    width: 50%;
+}
+.form_line.date .form_input_2 input{
+    width: 50%;
+}
+.date_callendar input{
+
+    border: 1px solid #7d7d7d;
+    padding: 6px 15px 6px 10px;
+    background: url("/css/img/icons_dev2.png") no-repeat 48px -45px
+}
+.form_form_filtr .date_clock_2{
+    width:150px;
+}
+.form_form_filtr .date_clock_2 input{
+    margin: 0 -30px 0 12px;
+    width: 127px !important;
+    height: 30px;
+}
+.form_form_filtr .date_clock_2 input{
+    border: 1px solid #7d7d7d;
+    padding: 6px 15px 6px 15px;
+    background: url("/css/img/icons_dev2.png") no-repeat 86px -104px;
+}
+
+.date_clock input{
+    border: 1px solid #7d7d7d;
+    padding: 6px 15px 6px 15px;
+    background: url("/css/img/icons_dev2.png") no-repeat 86px -104px;
+}
+
+.select_input input{
+    border: 1px solid #7d7d7d;
+    padding: 6px 15px 6px 15px;
+    /*background: url("/css/img/icons_dev2.png") no-repeat 136px -3px;*/
+}
+
+
+.button_form{
+    text-align: right;
+}
+.button_form input:hover, .mid_data .button:hover{
+    background-color: #00c810 !important
+}
+.button_form button{
+    background-color: #017eba;
+    border: solid 0 #fff;
+    padding: 4px 21px 4px 29px;
+    margin-right: -3px;
+    color: #fff;
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+/**     *********************/
+.content_info{
+    padding: 30px 70px 30px 0;
+    background-color: #fff;
+    float: left;
+    width: 650px;
+    margin-right: 30px;
+}
+
+.content_info span.title_img{
+    height: 37px;
+    width: 37px;
+    position: absolute;
+    background: url('/css/img/icons_dev2.png') #017eba -5px -142px;
+
+}
+.content_info.add_form_info span.title_img{
+    background: url('/css/img/icons_dev2.png') #017eba -6px -230px;
+}
+
+.content_info .title, .map_field .title{
+    line-height: 36px;
+    margin-bottom: 30px;
+    padding-left: 66px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color:#017eba;
+}
+.map_field{
+    float: left;
+    padding: 0px 0px 0px 0px;
+
+}
+.map_block{
+    padding: 32px 0 8px 0;
+    background-color: #fff;
+}
+#map-canvas{
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 445px;
+    height: 536px;
+}
+.map_field span.title_img{
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    background: url('/css/img/icons_dev2.png') #017eba -6px -185px;
+}
+
+.stadt .form_input_2{
+    vertical-align: top;
+}
+
+.form_line .search_ul{
+    margin-top:-2px;
+    position: absolute;
+    background-color: #edf2f5;
+    border: 1px solid #dbdfe2;
+    list-style-type: none;
+    padding: 0px 0px;
+}
+.form_line .search_ul li{
+    min-width: 192px;
+    cursor:pointer;
+    line-height: 30px;
+    padding:0px 10px;
+    border-bottom:0px solid #7d7d7d;
+}
+.form_line .search_ul li:last-child{
+    border-bottom: 0px solid #000;
+}
+
+.form_line .search_ul li:hover{
+    background-color: #9acfea;
+}
+
+
+
+.extra_point{
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 3px 0 0 2px;
+    color: #017eba;
+}
+.add_form .location input{
+    display:none;
+}
+#exaple_field .location .del{
+    display: none;
+    cursor: pointer;
+}
+.location .del{
+    cursor: pointer;
+    color: #ff5f69;
+}
+
+/** Form add FORM ADD**/
+.form_form {
+    color: #4f4f4f;
+    font-family: MyriadPro-Regular;
+}
+.form_form .form_label{
+    display: inline-block;
+    width: 123px;
+
+}
+
+.form_form .form_input_1{
+    display: inline-block;
+    width: 40%;
+}
+.form_form .form_input_2{
+    display: inline-block;
+    width: 25%;
+}
+.form_form .separate{
+    display: inline-block;
+    width: 4%;
+}
+.form_form .date{
+    margin-top: -1px;
+    margin-bottom: 4px;
+}
+.form_form .standart_2 .form_label{
+    vertical-align: top;
+    line-height: 30px;
+}
+.form_form  .standart_2 .search_ul{
+    margin-top: 29px;
+    width: 127px;
+    display: none;
+}
+.form_form  .standart_2 .search_ul li{
+    width: 127px !important;
+    min-width: 127px !important;
+}
+.form_form .standart_2 input{
+    padding: 4px 12px 1px 10px;
+    width: 128px;
+
+}
+.form_form .standart_2 .input{
+    cursor: pointer;
+    padding: 4px 12px 1px 10px;
+    width: 128px;
+    background: url("/css/img/icons_dev2.png") no-repeat 88px -6px;
+    border: 1px solid #7d7d7d;
+    float:left;
+    height: 30px;
+}
+.form_form .standart_3{
+    margin-bottom: 3px;
+}
+.form_form .standart_3 .form_label{
+    margin-top: -3px;
+    vertical-align: top;
+}
+.form_form .standart_3 span {
+    line-height: 2px;
+    font-size: 12px;
+}
+
+.form_form .standart_3  input{
+    vertical-align: bottom;
+    padding: 4px 12px 1px 10px
+}
+.form_form .date_callendar{
+    width: 194px;
+}
+.form_line.standart.date .form_label span{
+    color: #c4c4c4;
+    font-style: italic;
+}
+.form_form .date_callendar span{
+    line-height: 38px;
+    float: right;
+
+}
+.form_form .form_line.date .form_input_1 input,
+.form_form .date_callendar input{
+    padding: 4px 12px 3px 10px;
+    width: 127px;
+    background: url("/css/img/icons_dev2.png") no-repeat 88px -46px
+}
+.form_form .date_clock{
+    text-align: right;
+    width:178px;
+
+}
+.form_input_2.date_clock span{
+    color: #c4c4c4;
+    float: left;
+    line-height: 38px;
+    font-style: italic;
+}
+.form_form .date_clock input{
+    width: 127px !important;
+    margin-right: -2px;
+    padding: 4px 12px 3px 10px;
+}
+
+.form_form .standart_radio .form_input_1{
+    width: 70%;
+    margin:0;
+}
+.standart_radio label{
+    margin-right: 23px !important;
+    padding-left: 33px !important;
+}
+.form_form  .standart_checkbox label{
+
+    padding-left: 33px !important;
+}
+.form_form  .standart_checkbox_2{
+    margin-top:-8px !important;
+}
+.form_form .form_input_1.radio label{
+    border: 0px solid #fff;
+    background-color: transparent;
+    color:rgb(79, 79, 79);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 28px;
+    font-weight: 100;
+    font-family: Lato-Regular, Verdana;
+    font-size: 15px
+}
+.form_form .form_input_1.radio label.active{
+    background:url("/css/img/icons_dev2.png") no-repeat -9px -289px
+}
+.form_form .form_input_1.radio label{
+    background:url("/css/img/icons_dev2.png") no-repeat -9px -346px
+}
+/** Checkbox **/
+.form_form .standart_checkbox{
+    margin-top: 10px;
+}
+.form_form .standart_checkbox label{
+    font-weight: 100;
+    font-family: Lato-Regular, Verdana;
+    border: 0px solid #fff;
+    background-color: transparent;
+    color:rgb(79, 79, 79);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color:rgb(79, 79, 79);
+    padding-left: 28px;
+    background:url("/css/img/icons_dev2.png") no-repeat -9px -346px
+}
+.form_form .standart_checkbox label.active{
+    background:url("/css/img/icons_dev2.png") no-repeat -9px -289px
+}
+.form_form1 .standart_checkbox input{
+    display: none;
+}
+/*** textarea ****/
+
+.standart_textarea .form_label{
+    vertical-align: top;
+}
+.standart_textarea .form_input_1{
+    width: 389px;
+    margin-right: -27px;
+}
+.standart_textarea{
+    margin-bottom: -1px;
+}
+.standart_textarea span{
+    font-style: italic;
+    color: #c4c4c4;
+
+}
+
+.form_form textarea{
+    padding:20px 20px;
+    border: 1px solid #7d7d7d;
+    width: 100%;
+    height: 110px;
+}
+
+
+
+.form_form .standart_celecter button{
+    border:1px solid #7d7d7d;
+    background-color: transparent;
+    color:rgb(79, 79, 79);
+    border-radius: 0px;
+}
+.form_form .standart_celecter .open button{
+    border:1px solid #7d7d7d;
+    background-color: transparent;
+    color:rgb(79, 79, 79);
+    border-radius: 0px;
+}
+
+.form_form .standart_celecter .open a{
+    border: 0px solid #000 !important;
+    -webkit-box-shadow: none !important;;
+    box-shadow: none !important;;
+}
+.form_form .standart_celecter .open li{
+    border: 0px solid #000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form_line.standart_celecter{
+    margin-top: 10px;
+}
+
+.datepicker-days th{
+    background-color: #017eba;
+    color: #fff;
+}
+
+/*************/
+
+.standart_celector_2 {
+
+    margin-top: 12px !important;
+}
+.standart_celector_2 input{
+    width: 90px !important;
+    padding: 4px 12px 1px 10px;
+}
+.standart_celector_2 .form_label{
+vertical-align: top;
+    line-height: 30px;
+}
+.standart_celector_2 .form_input_1{
+    width: 170px !important;
+}.standart_celector_2 .form_input_2{
+
+    width: 70px !important;
+}
+
+
+
+
+.form_form  .standart_celector_2 .search_ul{
+    margin-top: 29px;
+    width: 91px;
+    display: none;
+    z-index: 999999;
+}
+.form_form  .standart_celector_2 .search_ul li{
+    width: 91px !important;
+    min-width: 91px !important;
+}
+
+.form_form .standart_celector_2 .input{
+    cursor: pointer;
+    padding: 4px 12px 1px 10px;
+    width: 91px;
+    background: url("/css/img/icons_dev2.png") no-repeat 50px -6px;
+    border: 1px solid #7d7d7d;
+    float:left;
+    height: 30px;
+}
+
+
+
+.standart_checkbox_3{
+    margin-top: 20px !important;
+}
+
+.error_checkbox_block{
+    display:none;
+    border: 1px solid    #C00;
+    width: 22px;
+    background-color: #FEE;
+    /*display: inline-block;*/
+    height: 21px;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+}
+
+
+
+
+
