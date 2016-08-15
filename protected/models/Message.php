@@ -32,8 +32,8 @@ class Message extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('sender_user_id, receiver_user_id, text, date_add', 'required'),
-			array('sender_user_id, receiver_user_id, date_add', 'numerical', 'integerOnly'=>true),
+			array('sender_user_id, receiver_user_id, text, travel_id', 'required'),
+			array('sender_user_id, receiver_user_id, date_add, travel_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, sender_user_id, receiver_user_id, text, date_add', 'safe', 'on'=>'search'),

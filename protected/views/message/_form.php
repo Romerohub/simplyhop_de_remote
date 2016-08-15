@@ -3,6 +3,62 @@
 /* @var $model Message */
 /* @var $form CActiveForm */
 ?>
+<script>
+    $(document).ready(function(){
+        $(".nano").nanoScroller();
+
+    })
+
+</script>
+<div class="center-block container_mid ">
+    <div class="msg_title">
+        <span class="title_img" style="  background: url('/css/img/icons_dev2.png') #017eba -4px -1127px;"></span>
+        <div class="title">
+            <div class="img" style="background: url(/upload/2/upic/thumb_100.jpg) no-repeat center top"></div>
+            <div class="name">name</div>
+            <div class="date_visit"><span></span>Donnerstag, den 30. Juni - 06:00 Uhr</div>
+            <div class="rote_name">Hauptstraße 11, 30159 Hannover  ->     Mailand</div>
+
+        </div>
+    </div>
+<div class="msg_block_main">
+    <div class="msg_block nano">
+        <div class="nano-content">
+            <div class="msg_item">
+                <div class="img" style="background: url(/upload/2/upic/thumb_100.jpg) no-repeat center top"></div>
+                <div class="devider_1"></div>
+                <div class="text">11111<br>333</div>
+                <div class="time">11:11</div>
+            </div>
+            <div class="msg_item_me" >
+                <div class="img"></div>
+                <div class="devider_2"></div>
+                <div class="time">11:11</div>
+                <div class="text">22222</div>
+
+            </div>
+            <div class="msg_item">
+                <div class="img" style="background: url(/upload/2/upic/thumb_100.jpg) no-repeat center top"></div>
+                <div class="devider_1"></div>
+                <div class="text">11111<br>333</div>
+                <div class="time">11:11</div>
+            </div>
+        </div>
+    </div>
+</div><!--msg_block_main-->
+
+    <div class="msg_send">
+        <div class="textarea">
+        <textarea></textarea>
+            </div>
+        <button></button>
+    </div>
+
+
+</div>
+
+
+<? return false;?>
 
 <div class="form">
 

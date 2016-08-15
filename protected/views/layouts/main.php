@@ -55,9 +55,12 @@ if(!empty($data5)) {
     <script src="/css/js/main.js"></script>
 
     <link href="/css/js/lity-1.6.6/dist/lity.css" rel="stylesheet">
+
     <script src="/css/js/lity-1.6.6/vendor/jquery.js"></script>
     <script src="/css/js/lity-1.6.6/dist/lity.js"></script>
 
+    <script src="/css/js/jquery.nanoscroller.min.js"></script>
+    <link href="/css/js/nanoscroller.css" rel="stylesheet">
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 </head>
@@ -107,6 +110,9 @@ z-index: 999999;
     $img_ttt = "/css/img/dev_diz/INT5-10.jpg";
     $img_ttt = "/css/img/dev_diz/INT5-2.jpg";
     $img_ttt = "/css/img/dev_diz/INT5-9.jpg";
+    $img_ttt = "/css/img/dev_diz/INT5-11.jpg";
+    $img_ttt = "/css/img/dev_diz/INT5-8.jpg";
+
     ?>
 
 background: url('<? echo $img_ttt; ?>') no-repeat center <? if(!empty($_GET['from_top_ttt'])){  echo $_GET['from_top_ttt'];}else{ echo 0; }?>px;
