@@ -72,7 +72,17 @@ class User extends CActiveRecord
 			'userRequestId' => array(self::HAS_MANY, 'Requests', 'user_request_id'),
 		);
 	}
-
+    /**
+     * Returns User model by its email
+     *
+     * @param string $email
+     * @access public
+     * @return User
+     */
+    public function findByEmail($email)
+    {
+        return self::model()->findByAttributes(array('email' => $email));
+    }
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */

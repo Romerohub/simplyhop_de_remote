@@ -219,6 +219,7 @@
 .msg_list_item{
     background-color: #fff;
     padding: 19px 15px 15px 67px;
+    margin: 0 0 26px 0;
 }
 .msg_list_item.active{
     background-color: transparent;

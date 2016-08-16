@@ -4,6 +4,9 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
+<?php
+$this->widget('ext.eauth.EAuthWidget', array('action' => 'site/login'));
+?>
 
 <h1>Login</h1>
 

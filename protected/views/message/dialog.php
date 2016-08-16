@@ -78,6 +78,7 @@ $(document).ready(function(){
                 console.log(response);
                 if(response == "ok"){
                     get_mmessages_list();
+                    $('textarea[name="Message[text]"]').val("")
                 }
                 try{
                    // res = jQuery.parseJSON(response);

@@ -34,6 +34,8 @@ class Message extends CActiveRecord
 		return array(
 			array('sender_user_id, receiver_user_id, text, travel_id', 'required'),
 			array('sender_user_id, receiver_user_id, date_add, travel_id', 'numerical', 'integerOnly'=>true),
+
+            array('dialog_id_name', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, sender_user_id, receiver_user_id, text, date_add', 'safe', 'on'=>'search'),
