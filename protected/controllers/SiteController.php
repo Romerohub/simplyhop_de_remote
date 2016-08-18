@@ -35,6 +35,10 @@ class SiteController extends Controller
 	public function actions()
 	{
 		return array(
+
+
+
+
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
 				'class'=>'CCaptchaAction',
@@ -88,6 +92,57 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+//print_R();
+      //  Yii::app()->user->id = 2;
+       /// print_R(Yii::app()->user->gender); exit;
+
+//https://github.com/ziolek/yii-eauth-nk/blob/master/README_RU.md
+
+      //  Yii::app()->eauth->fetchAttributes();
+        $service = Yii::app()->request->getQuery('service');
+
+        if (isset($service)) {
+            $authIdentity = Yii::app()->eauth->getIdentity($service);
+            $authIdentity->redirectUrl = Yii::app()->user->returnUrl;
+            //$authIdentity->redirectUrl = "/site/filtr";
+            $authIdentity->cancelUrl = $this->createAbsoluteUrl('site/login');
+
+            if ($authIdentity->authenticate()) {
+              //  print_R($authIdentity);exit;
+                $identity = new EAuthUserIdentity($authIdentity);
+
+
+//print_R($authIdentity); exit;
+                // успешная авторизация
+                if ($identity->authenticate()) {
+
+                    //print_R(Yii::app()->user); exit;
+//print_R($identity);
+                  //  echo $authIdentity->redirectUrl; exit;
+
+                    Yii::app()->user->login($identity);
+
+                    // специальное перенаправления для корректного закрытия всплывающего окна
+                    $authIdentity->redirectUrl = "/site/filtr";
+                    $authIdentity->redirect();
+                }
+                else {
+                    // закрытие всплывающего окна и перенаправление на cancelUrl
+                    $authIdentity->cancel();
+                }
+            }
+
+            // авторизация не удалась, перенаправляем на страницу входа
+            $this->redirect(array('site/login'));
+        }
+
+
+
+
+
+
+        /////////////////
+
 		if (!defined('CRYPT_BLOWFISH')||!CRYPT_BLOWFISH)
 			throw new CHttpException(500,"This application requires that PHP was compiled with Blowfish support for crypt().");
 
@@ -105,8 +160,10 @@ class SiteController extends Controller
 		{
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+			if($model->validate() && $model->login()) {
+               // $this->redirect(Yii::app()->user->returnUrl);
+                $this->redirect("/site/filtr");
+            }
 		}
 		// display the login form
 		$this->render('login',array('model'=>$model));
@@ -141,6 +198,7 @@ class SiteController extends Controller
 	}
 	public function actionFiltr()
 	{
+
         if (!defined('CRYPT_BLOWFISH')||!CRYPT_BLOWFISH)
             throw new CHttpException(500,"This application requires that PHP was compiled with Blowfish support for crypt().");
 

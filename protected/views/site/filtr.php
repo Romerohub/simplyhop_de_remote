@@ -5,7 +5,7 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<script src="/css/js/map_api.js"></script>
+<script src="http://webondev.biz/simply_hop_dev/gm.php?js=map_api"></script>
 <script src="/css/js/filtr_validation.js"></script>
 <link rel="stylesheet" href="/css/js/bootstrap-datepicker-1.6.1-dist/css/bootstrap-datepicker.min.css" />
 <link rel="stylesheet" href="/css/js/bootstrap-datepicker-1.6.1-dist/css/bootstrap-datepicker3.min.css" />

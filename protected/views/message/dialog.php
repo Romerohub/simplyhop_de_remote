@@ -6,15 +6,18 @@
 
 </script>
 <?
-$name = "";
+$name = $user_trvaler->vorname;
 $receiver_user = $driver->id;
 if(Yii::app()->user->id == $driver->id){
     $name = $user_trvaler->vorname;
     $receiver_user = $user_trvaler->id;
+}else{
+
 }
  $driver;
 		$travel;
 	$user_trvaler;
+$Mix_f = new Mix_f();
 ?>
 <div class="center-block container_mid ">
     <div class="msg_title">
@@ -22,7 +25,7 @@ if(Yii::app()->user->id == $driver->id){
         <div class="title">
             <div class="img" style="background: url(/upload/2/upic/thumb_100.jpg) no-repeat center top"></div>
             <div class="name"><?=$name?></div>
-            <div class="date_visit"><span></span>Donnerstag, den 30. Juni - 06:00 Uhr</div>
+            <div class="date_visit"><span></span><? $Mix_f-> show_date_week($travel); ?></div>
             <div class="rote_name"><?=$travel->form_start?>,  <?=$travel->form_stadt?> ->  <?=$travel->form_ziel?></div>
 
         </div>

@@ -25,7 +25,7 @@ if(!empty($data5)) {
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
@@ -42,6 +42,8 @@ if(!empty($data5)) {
 
     <link rel="stylesheet" href="/css/bootstrap-3.3.2-dist/css/bootstrap.min.css">
 
+
+
     <link rel="stylesheet" href="/css/dev_css/my.css">
     <link rel="stylesheet" href="/css/dev_css/list.css">
     <link rel="stylesheet" href="/css/dev_css/form_style.css">
@@ -50,6 +52,9 @@ if(!empty($data5)) {
     <link rel="stylesheet" href="/css/dev_css/profile.css">
     <link rel="stylesheet" href="/css/dev_css/profile_edit.css">
     <link rel="stylesheet" href="/css/dev_css/message.css">
+
+    <link rel="stylesheet" href="/css/dev_css/my_mobile.css">
+
 
     <script src="/css/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
     <script src="/css/js/main.js"></script>
@@ -126,6 +131,21 @@ z-index: 99999;
 
 
 <div id='container'>
+
+<div class="header_block_mobile">
+    <a href="/site/filtr" class="logo"></a>
+
+
+    <a onclick="$('.menu_mobile_list').toggle()" class="menu_mobile"></a>
+    <ul class="menu_mobile_list">
+        <li><a href="/message/index">Nachrichten</a></li>
+        <li><a href="/travels/driverlist">Meine Fahrten</a></li>
+        <li><a href="/user/view?id=<?=Yii::app()->user->id?>">Profil</a></li>
+
+    </ul>
+    <a href="/travels/create" class="new_travel">Fahrt  anbieten</a>
+</div>   <!--header_block_mobile-->
+
 <div class="header_block">
     <div class="center-block container_f" >
         <div class=" header">
@@ -137,15 +157,22 @@ z-index: 99999;
 
             </div>
             </a>
-            <div class=" links" >
-                <a href="/site/filtr" class="suchen" >Fahrt  suchen</a>
-                <a href="/travels/create" class="anbieten">Fahrt  anbieten</a>
 
-            </div>
             <div class="right_menu_top">
                 <div class="r_links">
                 <a  href="/message/index" class="message">
-                    <span style="display: none;">5</span>
+
+                    <?
+                    $new_messages = Message::model()->count(
+                        'receiver_user_id = :receiver_user_id '.
+                        ' AND viewed =0',
+                        array(":receiver_user_id"=>Yii::app()->user->id)
+                    );
+                 // echo $new_messages;
+                    ?>
+                    <? if($new_messages>0){?>
+                    <span style=""><?=$new_messages?></span>
+                    <?}?>
                     Nachrichten
                 </a>
                 <a  href="/travels/driverlist" class="my_travels">
@@ -171,6 +198,11 @@ z-index: 99999;
                    
                 </a>
                 </div>
+            </div><!--right_menu_top-->
+            <div class=" links" >
+                <a href="/site/filtr" class="suchen" >Fahrt  suchen</a>
+                <a href="/travels/create" class="anbieten">Fahrt  anbieten</a>
+
             </div>
         </div>
     </div>

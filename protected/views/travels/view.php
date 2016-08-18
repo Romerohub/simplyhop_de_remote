@@ -193,7 +193,7 @@ $u=User::model()->findByPk($model->travel_owner_id);
 
             <? if($model->travel_owner_id != Yii::app()->user->id && $res_places > 0){?>
                 <div class="v_head_2">Hier klicken und Platz reservieren:</div>
-                <a href="/message/index"  class="v_button" id="">Fahrer/in kontaktieren</a>
+                <a href="/message/dialog?trvl_id=<?=$model->id?>&usr_id=<?=$model->travel_owner_id?>"  class="v_button" id="">Fahrer/in kontaktieren</a>
                 <a href="#send_request"  data-lity class="v_button" id="">Mitfahren</a>
             <?}else{?>
                 <div style="height: 40px;"></div>

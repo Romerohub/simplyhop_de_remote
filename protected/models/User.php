@@ -35,15 +35,16 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, email', 'required'),
+			array('username, password', 'required'),
 			array('username, password, email', 'length', 'max'=>128),
 			array('profile', 'safe'),
              array(
                  'farbe,
+                 fb_id,
                 geschlecht,
-                vorname
+                vorname,
                 nachname,
-                email ,
+                email,
                 form_stadt,
                 form_handy,
                 form_automarke,
@@ -92,6 +93,7 @@ class User extends CActiveRecord
 			'id' => 'Id',
 			'username' => 'Username',
 			'password' => 'Password',
+			'fb_id' => 'fb_id',
 
 			'form_name' => 'form_name',
 

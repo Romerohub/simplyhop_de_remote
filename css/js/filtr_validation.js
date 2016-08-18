@@ -1,3 +1,12 @@
+$(document).ready(function(){
+    $("input").click(function(){
+        $("input").removeClass("error");
+    })
+
+    return false;
+
+})
+
 function validate_form(e) {
     var errors = [];
  

@@ -3,10 +3,11 @@
     width: none;
      margin-right: 0;
 }
-.filtr_form  .content_info_block{
+.filtr_form .content_info_block{
     /*background-color: #fff;*/
     float: left;
-    width: 650px;
+    max-width: 650px;
+    width: 100%;
     margin-right: 30px;
     padding: 0;
 }

@@ -38,13 +38,14 @@
 
         <img src="/css/img/map.png">
 
-        <a href="/site/filtr">
-            <img class="facebook_btn" src="/css/img/facebook.png">
-        </a>
 
-        <div>
-                Bereits Mitgled?   <span><a href="">Einloggen</a></span>
-        </div>
+        <? $this->widget('ext.eauth.EAuthWidget', array('action' => 'site/login')); ?>
+
+        <!--a href="/site/filtr">
+            <img class="facebook_btn" src="/css/img/facebook.png">
+        </a-->
+
+
     </div><!--enter_f-->
 
 </div>

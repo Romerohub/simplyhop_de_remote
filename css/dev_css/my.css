@@ -64,8 +64,11 @@ a:hover{
 
 
 .header .links{
-    margin-left: 216px;
-    width: 163px;
+     float: right;
+    margin-right: 92px;
+    /*margin-left: 216px;*/
+    width:100%;
+    max-width: 163px;
     display: inline-block;
 }
 .header .links .suchen{
@@ -134,6 +137,10 @@ a:hover{
     background: url("/css/img/icons_dev.png") no-repeat -64px  -356px;
 }
 .profile{
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: -9px;
+    text-align: center;
     width: 163px;
     display: inline-block;
     padding: 22px 24px 0 0;
@@ -177,7 +184,7 @@ a:hover{
     margin-top: 20px;
     padding-top: 25px;
     color: #fff;
-    height: 210px;
+    min-height: 210px;
     background: url("/css/img/footer.jpg")  top center;
 
 /*width: 100%;
@@ -269,7 +276,8 @@ a:hover{
 /******* COntent********/
 .container_mid{
     margin-top: 45px;
-    width: 1142px;
+    max-width: 1142px;
+    width: 100%;
 }
 .container_dev{
 
