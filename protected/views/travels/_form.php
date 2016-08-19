@@ -126,7 +126,7 @@
                 </div>
 
                 <div id="exaple_field">
-                    <div class="form_line standart searching" >
+                    <div class="form_line standart searching extra_points" >
                         <div class="form_label">
                             Zwischenstopp 1
                         </div>
@@ -180,11 +180,11 @@
                     </div>
                     <div class="form_input_1 date_callendar" >
                         <input type="text" id="datePicker2"   name="Travels[datum_start]"  placeholder="tt.mm.jjjj">
-                        <span>Uhrzeit</span>
+
                     </div>
 
                     <div class="form_input_2 date_clock">
-                        <span>Start</span>
+                        <div class="field_name_2">Uhrzeit&nbsp;<span>Start</span></div>
                         <input type="text" id="date_clock" onkeyup="return check_clock_time(this)" name="Travels[datum_start_time]"  placeholder="00:00">
                     
                     <div id="passed_time" style="
@@ -233,11 +233,11 @@
                     </div>
                 </div>*/?>
 
-
+<div style="clear: both"></div>
                 <div class="form_line standart_textarea standart_textarea_2">
-                    <div class="form_label">
-                        Sonstige<br>
-                        Hinweise<br>
+                    <div class="form_label form_label_textarea_2">
+                        <div>Sonstige</div>
+                       <div> Hinweise</div>
                         <span> Treffpunkt etc.</span>
                     </div>
                     <div class="form_input_1">
@@ -262,6 +262,7 @@
 
                     </div>
                 </div>
+                <div style="clear: both;"></div>
                 <div class="form_line standart_checkbox standart_checkbox_2">
                     <div class="form_label">
                     </div>
@@ -324,7 +325,7 @@
                         </div>
                     </div> <span class="confirm_ruls_err" style="display:none; color:#ff6258;"> Confirm rules</span>
                 </div>
-
+                <div style="clear:both;"></div>
                 <div class="button_form">
                     <button >Fahrt eintragen</button>
 

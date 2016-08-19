@@ -216,7 +216,8 @@
 .form_form .form_input_2{
     display: inline-block;
     width: 25%;
-    min-width: 150px;
+    /*min-width: 150px;*/
+    min-width: 110px;
 }
 .form_form .separate{
     display: inline-block;
@@ -270,7 +271,7 @@
     padding: 4px 12px 1px 10px
 }
 .form_form .date_callendar{
-    width: 194px;
+    width: 144px;
 }
 .form_line.standart.date .form_label span{
     color: #c4c4c4;
@@ -288,13 +289,15 @@
     background: url("/css/img/icons_dev2.png") no-repeat 88px -46px
 }
 .form_form .date_clock{
-    text-align: right;
-    width:178px;
+    text-align: left;
+    width: 216px;
 
+}
+.form_input_2.date_clock .field_name_2{
+    display: inline-block;
 }
 .form_input_2.date_clock span{
     color: #c4c4c4;
-    float: left;
     line-height: 38px;
     font-style: italic;
 }
@@ -433,8 +436,10 @@ vertical-align: top;
     line-height: 30px;
 }
 .standart_celector_2 .form_input_1{
-    width: 170px !important;
-}.standart_celector_2 .form_input_2{
+    width: 143px !important;
+    /*width: 170px !important;*/
+}
+.standart_celector_2 .form_input_2{
 
     width: 70px !important;
 }

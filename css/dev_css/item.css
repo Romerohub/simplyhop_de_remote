@@ -37,7 +37,8 @@
 .item_view{
     background-color: #fff;
     float: left;
-    width: 650px;
+    max-width: 650px;
+    width: 100%;
 }
 
 
@@ -260,12 +261,13 @@ a.view_profile:hover{
 
     float:left;
     margin: 0 0 0 30px;
-    width: 442px;
+    width: 460px;
 
     min-height: 200px;
 }
 .item_sidebar .v_head{
     margin-bottom: 34px;
+    text-align: center;
 }
 .item_sidebar .v_head_2{
     margin: 15px 0 12px 0;
@@ -276,8 +278,11 @@ a.view_profile:hover{
     float:left;
    width: 154px;
     height: 92px;
-
-    background: url('/css/img/icons_dev2.png') #edf2f5 no-repeat 74px -942px;
+background-color: #edf2f5;
+    /*background: url('/css/img/icons_dev2.png') #edf2f5 no-repeat 74px -942px;*/
+}
+.item_sidebar .total_bagage .number{
+    background: url('/css/img/icons_dev2.png') #edf2f5 no-repeat 19px -942px;
 }
 .item_sidebar .total_bagage .number, .item_sidebar .total_places .number{
     font-size: 30px;
@@ -286,6 +291,8 @@ a.view_profile:hover{
     margin-left: 52px;
 }
 .item_sidebar .total_places .number{
+    background: url('/css/img/icons_dev2.png') #edf2f5 no-repeat 13px -1029px;
+
     margin-left: 47px;
 }
 .item_sidebar .total_bagage .text_desc, .item_sidebar .total_places .text_desc{
@@ -298,7 +305,8 @@ a.view_profile:hover{
     float:right;
     width: 154px;
     height: 92px;
-    background: url('/css/img/icons_dev2.png') #edf2f5 no-repeat 60px -1030px;
+    /*background: url('/css/img/icons_dev2.png') #edf2f5 no-repeat 60px -1030px;*/
+    background-color: #edf2f5;
 }
 
 .item_sidebar .v_button a{ text-decoration: none; }
@@ -321,9 +329,11 @@ a.view_profile:hover{
 /****** REQUEST_FORM **********/
 
 .send_request{
+    margin:0 auto;
     padding: 33px 52px 15px 0px;
-    width: 616px;
-    height: 154px;
+    max-width: 616px;
+    width:100%;
+    min-height: 154px;
 }
 .send_request .title{
     margin-left: 30px;
@@ -345,8 +355,9 @@ a.view_profile:hover{
     width: 105px !important;
 }
 
-.send_request  .button_form{
+.send_request .button_form{
     float: right;
+   /* margin-left: -17px;*/
 }
 .send_request  .button_form button{
     padding: 3px 17px 2px 23px;
@@ -360,8 +371,9 @@ a.view_profile:hover{
     width: 55px !important;
     min-width: 55px !important;
 }
-.send_request  .form_input_2{
+.send_request .form_input_2{
     padding: 0 0 0 24px;
+    min-width: 110px;
 }
 .r_sended{
     display: none;

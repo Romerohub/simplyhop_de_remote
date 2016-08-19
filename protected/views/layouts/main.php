@@ -138,6 +138,8 @@ z-index: 99999;
 
     <a onclick="$('.menu_mobile_list').toggle()" class="menu_mobile"></a>
     <ul class="menu_mobile_list">
+        <li><a href="/site/filtr">Fahrt  suchen</a></li>
+        <li><a href="/travels/create">Fahrt  anbieten</a></li>
         <li><a href="/message/index">Nachrichten</a></li>
         <li><a href="/travels/driverlist">Meine Fahrten</a></li>
         <li><a href="/user/view?id=<?=Yii::app()->user->id?>">Profil</a></li>

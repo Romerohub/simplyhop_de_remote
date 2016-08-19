@@ -25,10 +25,10 @@
 
         </div>
 
-        <div class="form_label">
+        <div class="form_label form_label2">
             Gepäckstücke
         </div>
-        <div class="form_input_2">
+        <div class="form_input_2 form_input_2_2">
             <div class="input">1</div>
             <ul class="search_ul">
                 <li >1</li>
@@ -43,6 +43,7 @@
             <button onclick="send_request(this)" >Fahrt eintragen</button>
 
         </div>
+        <div style="clear: both;"></div>
     </div>
 
 </form>

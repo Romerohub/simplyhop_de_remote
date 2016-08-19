@@ -57,7 +57,7 @@ $Mix_f = new Mix_f;
             </div>
         </div>
     </div><!--list_items-->
-    <div class="item_sidebar">
+    <div class="item_sidebar item_sidebar_screen">
         <div class="block_2 ">
             <? $u=User::model()->findByPk(Yii::app()->user->id); ?>
             <? include($_SERVER['DOCUMENT_ROOT']."/protected/views/parts/block_profile.php")?>

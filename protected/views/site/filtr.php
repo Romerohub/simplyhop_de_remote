@@ -34,7 +34,7 @@ if(!empty($_SESSION["filtr"]["city"]) ){
     <div class="col-sm-7  content_info_block">
         <div class="content_info">
             <span class="title_img"></span>
-            <div class="title">  Mithfahgelegenheit finden:</div>
+            <div class="title">  Mitfahgelegenheit finden:</div>
 
             <div class="form">
 
