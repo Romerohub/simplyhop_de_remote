@@ -33,19 +33,24 @@
     padding: 24px 0 15px 96px;
 }
 .msg_title .title .img{
+    display: inline-block;
     width: 52px;
     height:52px;
     border-radius: 54px;
 
 }
 .msg_title .title .name{
+    vertical-align: top;
     margin: 0 0 0 44px;
     width: 100%;
     max-width: 92px;
     color: #017eba;
+    line-height: 54px;
 
 }
 .msg_title .title .date_visit{
+    vertical-align: top;
+    line-height: 54px;
     margin1: 0 0 0 57px;
     width: 100%;
     max-width: 294px;
@@ -60,6 +65,8 @@
     background-color: #00c810;
 }
 .msg_title .title .rote_name{
+    vertical-align: top;
+    line-height: 54px;
     margin1: 0 0 0 66px;
     width: 100%;
     max-width: 394px;
@@ -100,6 +107,13 @@
 .msg_item .devider_1{
     max-width: 41px;
     width: 100%;
+}
+.msg_item .img_40{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+
 }
 .msg_item .img{
     width: 50px;
@@ -234,6 +248,12 @@
     height: 80px;
     border-radius: 80px;
 }
+.msg_list_item .img_40{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
 .msg_list_item .data_1{
     display: inline-block;
     vertical-align: top;
@@ -254,8 +274,9 @@
 
 .msg_list_item .user_info{
     display: inline-block;
-    height: 150px;
-    width: 194px;
+    min-height: 150px;
+    width: 100%;
+    max-width: 194px;
     border-right: 1px solid #c4c4c4;
 }
 .msg_list_item .msg_info{
@@ -294,10 +315,17 @@
 }
 .msg_list_item .data_6{
     padding: 7px 0 0 0;
+    text-align: right;
 }
 .msg_list_item .data_6 a{
-    margin-right: 43px;
-    text-decoration: underline;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 38px 4px 41px;
+    background-color: #00c810;
+}
+.msg_list_item .data_6 a:hover{
+    background-color: #017eba;
 }
 .msg_list_item {}
 

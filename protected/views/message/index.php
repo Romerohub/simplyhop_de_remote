@@ -14,7 +14,7 @@ $this->menu=array(
 
 
 
-<div class="center-block container_mid ">
+<div class="center-block container_mid message_content">
     <div class="msg_list_title">
         <span class="title_img" style="  background: url('/css/img/icons_dev2.png') #017eba 2px -2260px;"></span>
         <div class="title">

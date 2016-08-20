@@ -3,8 +3,8 @@
 /* @var $model Reviews */
 /* @var $form CActiveForm */
 ?>
-
-<div class="form_message content_info add_form_info">
+<div class="center-block container_mid">
+<div class="form_message content_info add_form_info add_review_form">
     <span class="title_img"></span>
     <div class="title"> New  message</div>
     <div class="form add_form">
@@ -74,6 +74,7 @@
 
     </div><!--form-->
 </div>
+</div><!--center-block container_mid-->
 
 
 

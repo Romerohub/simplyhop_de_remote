@@ -84,15 +84,15 @@ $u=User::model()->findByPk($model->travel_owner_id);
         <div class="v_data">
              <div class="data_31">
                  <div class="data_v_name">Abfahrtsort</div>
-                 <div class="data_v_val"><?=$model->form_start;?>, <?=$model->form_stadt?></div>
+                 <div class="data_v_val"><span></span><?=$model->form_start;?>, <?=$model->form_stadt?></div>
              </div>
             <div class="data_32">
                 <div class="data_v_name">Ankunftsort</div>
-                <div class="data_v_val"> <?=$model->form_ziel;?>, <?=$model->form_stadt?></div>
+                <div class="data_v_val"><span></span> <?=$model->form_ziel;?>, <?=$model->form_stadt?></div>
             </div>
             <div class="data_33">
                 <div class="data_v_name">Abfahrtsdatum</div>
-                <div class="data_v_val"> <?=$model->datum_start;?> - <?=$model->datum_start_time;?> Uhr</div>
+                <div class="data_v_val"><span></span> <?=$model->datum_start;?> - <?=$model->datum_start_time;?> Uhr</div>
             </div>
             <div class="data_34">
                 <div class="data_v_name">Details</div>
@@ -114,10 +114,10 @@ $u=User::model()->findByPk($model->travel_owner_id);
                        ?>
                        Ankunft: <?=$tmp_res?> Uhr  <? ?> </div>
                     <? if(!empty($model->form_umweg)){?>
-                   <div class="data_34_2">  Höchstens <?=$model->form_umweg?> Min. Umweg</div>
+                   <div class="data_34_2"><span></span>  Höchstens <?=$model->form_umweg?> Min. Umweg</div>
                     <? } ?>
                     <? if(!empty($model->form_max_2)){?>
-                   <div class="data_34_3">  Max. 2 auf der Rückbank</div>
+                   <div class="data_34_3"><span></span>  Max. 2 auf der Rückbank</div>
                     <?}?>
 
                 <div class="options_travel">
@@ -151,6 +151,7 @@ $u=User::model()->findByPk($model->travel_owner_id);
             <div class="data_text">
                 <a href="/user/view?id=<? echo $u->id; ?>"
                    class="img" style="<?=$Mix_f->show_user_pic($u->id,"view_small")?>"></a>
+
                 <div class="v_text">
                     <? //print_r($model->attributes);
 

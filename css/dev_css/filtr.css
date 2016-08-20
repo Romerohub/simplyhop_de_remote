@@ -15,7 +15,9 @@
 .form_form_filtr {
 
 }
-
+.form_form_filtr.form_form .date_callendar{
+    width: 192px;
+}
 .form_form_filtr .form_label{
 width: 94px !important;
 

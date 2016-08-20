@@ -12,8 +12,8 @@ $this->menu=array(
 );
 ?>
 
-
-<div class="pr_comments">
+<div class="center-block container_mid">
+<div class="pr_comments list_items">
     <div class="comment_view_title">
         <span class="title_img"></span>
         <div class="title"><? echo $dataProvider->getTotalItemCount();?>  Bewertungen</div>
@@ -31,4 +31,4 @@ $this->menu=array(
 
 </div>
 
-
+</div><!--center-block container_mid-->

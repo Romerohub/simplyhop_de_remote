@@ -27,16 +27,19 @@ $Mix_f = new Mix_f;
 
 ?>
 
-<div class="view">
+<div class="view" onclick=" window.location = '/travels/view?id=<? echo $data->id; ?>'">
     <div class="user_data">
         <a class="img" href="/user/view?id=<? echo $u->id;?>" style="<?=$Mix_f->show_user_pic($u->id,"list_view")?>"></a>
+
+        <a href="/user/view?id=<? echo $u->id; ?>"
+           class="img_40" style="<?=$Mix_f->show_user_pic($u->id,"view_small_40")?>""></a>
         <div class="name">
 
             <a href="/user/view?id=<? echo $u->id;?>"><?=$u->vorname;?> <?//=$u->nachname;?></a>
             <div style="clear:both;"></div>
             <div class="age"><?=$Mix_f->show_age($u->geburtsdatum)?> </div>
         </div>
-
+        <div class="data_33">
         <div class="user_data_icons">
             <? if($data->form_raucher == 1){?>
                 <span class="smoking"></span>
@@ -58,10 +61,22 @@ $Mix_f = new Mix_f;
             <? $Mix_f->count_review($u->id) ; ?>
 
         </div>
+        </div><!--data_33-->
     </div>
+
     <div class="travel_data">
-        <div class="data_10"><a href="/travels/view?id=<? echo $data->id; ?>"><?
-                $Mix_f-> show_date_week($data);
+
+        <div class="data_10 time_10"><a href="/travels/view?id=<? echo $data->id; ?>"><?
+              // сегодня - Heute
+                // завтра - Morgen
+                if($data->datum_start == date("d.m.Y")){
+                    echo "Heute";
+                }elseif($data->datum_start == date("d.m.Y",strtotime("+1 day"))){
+                    echo "Morgen";
+                }else{
+                    $Mix_f-> show_date_week($data);
+                }
+
                 ?></a>
         </div>
         <div class="data_10">
@@ -145,6 +160,7 @@ $Mix_f = new Mix_f;
 
 
 </div>
+
 <? return false;?>
 <div class="view" >
 

@@ -78,7 +78,7 @@
                     <div class="label"><?php echo $form->labelEx($model,'email'); ?></div>
                     <div class="field">
                         <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
-                        <span></span>
+                        <? if(!empty($model->email)){?><span></span><?}?>
                         <?php echo $form->error($model,'email'); ?>
                     </div>
                 </div>

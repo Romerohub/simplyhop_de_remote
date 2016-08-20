@@ -80,7 +80,7 @@ $u=User::model()->findByPk($model->id);
          </div>
 
          </div>
-        <div class="item_sidebar">
+        <div class="item_sidebar item_sidebar_screen">
             <div class="block_3">
                 <?
                 $data_auto = $model;

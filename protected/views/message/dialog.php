@@ -19,11 +19,11 @@ if(Yii::app()->user->id == $driver->id){
 	$user_trvaler;
 $Mix_f = new Mix_f();
 ?>
-<div class="center-block container_mid ">
+<div class="center-block container_mid message_content ">
     <div class="msg_title">
         <span class="title_img" style="  background: url('/css/img/icons_dev2.png') #017eba -4px -1127px;"></span>
         <div class="title">
-            <div class="img" style="background: url(/upload/2/upic/thumb_100.jpg) no-repeat center top"></div>
+            <a class="img" style="<?=$Mix_f->show_user_pic($receiver_user,"view_small")?>"></a>
             <div class="name"><?=$name?></div>
             <div class="date_visit"><span></span><? $Mix_f-> show_date_week($travel); ?></div>
             <div class="rote_name"><?=$travel->form_start?>,  <?=$travel->form_stadt?> ->  <?=$travel->form_ziel?></div>

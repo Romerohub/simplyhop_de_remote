@@ -130,6 +130,21 @@ class Mix_f {
                 return  'background: url(/css/img/icons_dev2.png) no-repeat -9px -1894px;';
             }
         }
+        if($size == "view_small_40"){
+            $img1 = "/upload/". $user_id."/upic/thumb_resize_40.jpg";
+            $img = $_SERVER['DOCUMENT_ROOT'].$img1;
+            if(file_exists($img)){
+                return 'background: url('.$img1.') no-repeat center top';
+                // return $img;
+            }else{
+                if($u->geschlecht == 1){
+                    return  'background: url(/css/img/icons_dev2.png) no-repeat -24px -1248px';
+                }elseif($u->geschlecht == 2){
+                    return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
+                }
+                return  'background: url(/css/img/icons_dev2.png) no-repeat -9px -1894px;';
+            }
+        }
 
 
         if($size == "header_pic"){

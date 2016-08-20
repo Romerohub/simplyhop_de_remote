@@ -119,7 +119,6 @@ class UserController extends Controller
 	{
 		$model=$this->loadModel($id);
 
-
         if(!empty($_GET['delf'])){
             $uudeldir = $_SERVER['DOCUMENT_ROOT'] . '/upload/' . Yii::app()->user->id . "/upic";
             array_map('unlink', glob($uudeldir."/*.*"));
@@ -165,7 +164,7 @@ class UserController extends Controller
             }
             if(!empty($_FILES['user_pic']['name'])) {
                 $uploaddir = $_SERVER['DOCUMENT_ROOT'] . '/upload/' . Yii::app()->user->id . "/upic";
-                $uploadfile = $uploaddir . "/main-" . basename($_FILES['user_pic']['name']);
+                $uploadfile = $uploaddir . "/main-" . str_replace(" ","_",basename($_FILES['user_pic']['name']));
                 $file_tumb = $uploaddir . "/thumb_100.jpg";
                 if (!is_dir($uploaddir)) {
                     if (!mkdir($uploaddir, 0777, true)) {
@@ -176,57 +175,7 @@ class UserController extends Controller
                 if (move_uploaded_file($_FILES['user_pic']['tmp_name'], $uploadfile)) {
                     // echo "Файл корректен и был успешно загружен.\n";
 
-                    $tmp_sizes = getimagesize ($uploadfile);
-                    //print_r($tmp_sizes); exit();
-                    list($width, $height) = getimagesize($uploadfile);
-
-                    //http://www.yiiframework.com/extension/easyimage/
-                    try {
-                        $image = new EasyImage($uploadfile);
-                        $image->resize(150, 150);
-                        $image->save($file_tumb);
-                    } catch (Exception $e) {
-                        echo 'Выброшено исключение3: ', $e->getMessage(), "\n";
-                    }
-                    try {
-                        $file_tumb = $uploaddir . "/thumb_crop_50.jpg";
-                        $image = new EasyImage($uploadfile);
-                        $image->scaleAndCrop(50, 50);
-                        $image->save($file_tumb);
-                    } catch (Exception $e) {
-                        echo 'Выброшено исключение4: ', $e->getMessage(), "\n";
-                    }
-                    try {
-
-                        $file_tumb = $uploaddir . "/thumb_resize_50.jpg";
-                        $image = new EasyImage($uploadfile);
-                        if($width > $height){
-                            $image->resize(2000, 60);
-                        }else{
-                            $image->resize(60, 2000);
-                        }
-
-
-                        $image->save($file_tumb);
-                    } catch (Exception $e) {
-                        echo 'Выброшено исключение4: ', $e->getMessage(), "\n";
-                    }
-                    try {
-                        $file_tumb = $uploaddir . "/thumb_crop_250.jpg";
-                        $image = new EasyImage($uploadfile);
-                        $image->scaleAndCrop(250, 250);
-                        $image->save($file_tumb);
-                    } catch (Exception $e) {
-                        echo 'Выброшено исключение4: ', $e->getMessage(), "\n";
-                    }
-                    try {
-                        $file_tumb = $uploaddir . "/thumb_crop_160.jpg";
-                        $image = new EasyImage($uploadfile);
-                        $image->scaleAndCrop(160, 160);
-                        $image->save($file_tumb);
-                    } catch (Exception $e) {
-                        echo 'Выброшено исключение5: ', $e->getMessage(), "\n";
-                    }
+                    include($_SERVER['DOCUMENT_ROOT']."/protected/views/parts/upload_file.php");
                 } else {
                     // echo "Возможная атака с помощью файловой загрузки!\n";
                 }

@@ -47,6 +47,7 @@ if(!empty($message->text)){
 <div class="msg_list_item <?=(($viewed<=0)?"active":"")?>">
     <div class="user_info">
         <a class="img" href="/user/view?id=<?=$usr_id?>" style="<?=$Mix_f->show_user_pic($u->id,"list_view")?>"></a>
+        <a class="img_40" href="/user/view?id=<?=$usr_id?>" style="<?=$Mix_f->show_user_pic($u->id,"view_small_40")?>"></a>
         <div class="data_1">
             <div class="data_1_1"><a href="/user/view?id=<?=$usr_id?>"><?=$u->vorname;?></a> </div>
             <div class="data_1_2"><?=$Mix_f->show_age($u->geburtsdatum)?></div>
@@ -57,7 +58,7 @@ if(!empty($message->text)){
         <div class="data_3"><span></span><? $Mix_f-> show_date_week($travel); ?></div>
         <div class="data_4"><span><?=date("d.m.Y", $message_date)?> in <?=date("H:i", $message_date)?></span> <span class="data_4_1"><?=$travel->form_start?>, <?=$travel->form_stadt?>&#8594; <?=$travel->form_ziel?></span></div>
         <div class="data_5"> <?=$message_text?></div>
-        <div class="data_6"><a href="">Antworten</a> <a href="/message/dialog?trvl_id=<?=$data->travel_id?>&usr_id=<?=$usr_id?>">Anzeigen</a></div>
+        <div class="data_6"> <a href="/message/dialog?trvl_id=<?=$data->travel_id?>&usr_id=<?=$usr_id?>">Antworten</a></div>
     </div>
 
 </div><!--msg_list_item-->

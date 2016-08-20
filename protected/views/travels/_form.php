@@ -38,6 +38,17 @@
 
 
     })
+    $(document).ready(function(){
+
+
+        //
+        $(document).click(function(event) {
+            if ($(event.target).closest(".search_ul").length) return;
+            $(".search_ul").hide();
+            drow_rpute()
+            event.stopPropagation();
+        });
+    });
 </script>
 
 <div class="center-block container_mid">

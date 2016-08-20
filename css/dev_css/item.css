@@ -55,15 +55,22 @@
     display: inline-block;
     padding: 0 0 0 23px;
 }
-.item_view .v_data  .data_31{
+.item_view .v_data .data_31{
     margin: 0 0 10px 0;
 }
-.item_view .v_data  .data_31 .data_v_name{
+.item_view .v_data .data_31 .data_v_name{
 
 }
-.item_view .v_data  .data_31 .data_v_val{
-    color: #3498c8;
+.item_view .v_data .data_31 .data_v_val span{
+    display: inline-block;
+    width: 23px;
     background: url('/css/img/icons_dev2.png') no-repeat -8px -538px;
+    height: 17px;
+    margin: 2px 0 -2px -23px;
+}
+.item_view .v_data .data_31 .data_v_val{
+    color: #3498c8;
+    /*background: url('/css/img/icons_dev2.png') no-repeat -8px -538px;*/
 }
 .item_view .v_data  .data_32{
     margin: 0 0 10px 0;
@@ -71,9 +78,16 @@
 .item_view .v_data  .data_32 .data_v_name{
 
 }
+.item_view .v_data  .data_32 .data_v_val span{
+    display: inline-block;
+    width: 23px;
+    background: url('/css/img/icons_dev2.png') no-repeat -10px -572px;
+    height: 17px;
+    margin: 2px 0 -2px -23px;
+}
 .item_view .v_data  .data_32 .data_v_val{
     color: #3498c8;
-    background: url('/css/img/icons_dev2.png') no-repeat -10px -572px;
+   /* background: url('/css/img/icons_dev2.png') no-repeat -10px -572px;*/
 }
 
 .item_view .v_data  .data_33{
@@ -96,19 +110,39 @@
     margin: 0 0 10px 0;
     background: url('/css/img/icons_dev2.png') no-repeat -1px -808px;
 }
+.item_view .v_data  .data_34 .data_34_2 span{
+    display: inline-block;
+    width: 23px;
+    background: url('/css/img/icons_dev2.png') no-repeat 1px -846px;
+    height: 17px;
+    margin: 2px 0 -2px -23px;
+}
 .item_view .v_data  .data_34 .data_34_2{
     margin: 0 0 10px 0;
-    background: url('/css/img/icons_dev2.png') no-repeat 1px -846px;
+    /*background: url('/css/img/icons_dev2.png') no-repeat 1px -846px;*/
+}
+.item_view .v_data  .data_34 .data_34_3 span{
+    display: inline-block;
+    width: 23px;
+    background: url('/css/img/icons_dev2.png') no-repeat -3px -777px;
+    height: 17px;
+    margin: 2px 0 -2px -23px;
 }
 .item_view .v_data  .data_34 .data_34_3{
     margin: 0 0 10px 0;
-    background: url('/css/img/icons_dev2.png') no-repeat -3px -777px;
+    /*background: url('/css/img/icons_dev2.png') no-repeat -3px -777px;*/
+}
+.item_view  .v_data .data_v_name{
+}
+.item_view  .v_data .data_v_val{
+
 }
 /**********************/
 .item_view .data_text{
    margin: 30px 0 0 0;
    background-color: #edf2f5;
 }
+
 .item_view .img{
     margin: 24px 0 0 31px;
     display: inline-block;
@@ -124,7 +158,7 @@
     margin-bottom:26px;
 }
 .item_view .data_text .v_text{
-    padding: 35px 127px;
+    padding: 35px 30px 35px 127px;
 }
 
 /****************/

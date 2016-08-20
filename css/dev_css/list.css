@@ -35,6 +35,7 @@
 
 
 .list_views .view{
+    cursor:pointer;
     min-height: 209px;
     background-color: #fff;
     padding: 20px 0px 16px 11px;
@@ -53,7 +54,12 @@
     height: 80px;
     border-radius: 50px;
 }
-
+.list_views .view .user_data .img_40{
+    width: 40px;
+    height: 40px;
+    display: none;
+    border-radius: 50px;
+}
 .list_views .view .user_data .name{
     display: inline-block;
     vertical-align: top;
@@ -109,7 +115,11 @@
     margin: 7px 0 0 55px;
     background: url('/css/img/icons_dev2.png')no-repeat -8px -511px;
 }
-
+.list_views .view .user_data .data_33{
+    display: inline-block;
+    vertical-align: top;
+    width: 212px;
+}
 
 
 .list_views .view .travel_data{
@@ -117,10 +127,14 @@
     vertical-align: top;
     padding: 7px 0 0 25px;
 }
-
+.list_views .view .travel_data .time_10{
+    font-weight: 900;
+    font-size: 15px;
+}
 .list_views .view .travel_data .data_10{
     width: 338px;
     color: #c4c4c4;
+
 }
 .list_views .view .travel_data .data_10 span.active{
     color: #337ab7;
@@ -146,13 +160,19 @@
     padding: 0px 0 0 33px;
 }
 .list_views .view .travel_data .data_15 a{
-    text-decoration: underline;
+
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    padding: 5px 38px 4px 41px;
+    background-color: #00c810;
 }
 .list_views .view .travel_data .data_16{
     padding: 16px 0 0 32px;
 }
 .list_views .view .travel_data .data_16 a{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 

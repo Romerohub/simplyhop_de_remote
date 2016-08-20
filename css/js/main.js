@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     $(".input").click(function(){
         $(this).parent().find(".search_ul").toggle()
     })
