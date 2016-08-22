@@ -7,13 +7,16 @@
 </script>
 <?
 $name = $user_trvaler->vorname;
-$receiver_user = $driver->id;
+//print_R($user_trvaler);
+ $receiver_user = $driver->id;
+//print_R($driver);
 if(Yii::app()->user->id == $driver->id){
     $name = $user_trvaler->vorname;
-    $receiver_user = $user_trvaler->id;
+   $receiver_user = $user_trvaler->id;
 }else{
 
 }
+//echo $receiver_user;
  $driver;
 		$travel;
 	$user_trvaler;

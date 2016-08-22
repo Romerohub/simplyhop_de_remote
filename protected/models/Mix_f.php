@@ -123,9 +123,11 @@ class Mix_f {
                 // return $img;
             }else{
                 if($u->geschlecht == 1){
-                    return  'background: url(/css/img/icons_dev2.png) no-repeat -24px -1248px';
+                    return  'background: url(/css/img/default_man.png) no-repeat 0px 0px;   background-size: 99%;';
+                   // return  'background: url(/css/img/icons_dev2.png) no-repeat -24px -1248px';
                 }elseif($u->geschlecht == 2){
-                    return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
+                    return  'background: url(/css/img/default_woman.png) no-repeat 0px 0px;   background-size: 99%;';
+                   // return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
                 }
                 return  'background: url(/css/img/icons_dev2.png) no-repeat -9px -1894px;';
             }
@@ -138,9 +140,11 @@ class Mix_f {
                 // return $img;
             }else{
                 if($u->geschlecht == 1){
-                    return  'background: url(/css/img/icons_dev2.png) no-repeat -24px -1248px';
+                    return  'background: url(/css/img/default_man.png) no-repeat 0px 0px;   background-size: 99%;';
+                   // return  'background: url(/css/img/icons_dev2.png) no-repeat -24px -1248px';
                 }elseif($u->geschlecht == 2){
-                    return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
+                    return  'background: url(/css/img/default_woman.png) no-repeat 0px 0px;   background-size: 99%;';
+                   // return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
                 }
                 return  'background: url(/css/img/icons_dev2.png) no-repeat -9px -1894px;';
             }
@@ -154,7 +158,12 @@ class Mix_f {
             if(file_exists($img)){
                 return $img1;
             }else{
-               return  "/css/img/default_50.png";
+                if($u->geschlecht == 1){
+                    return  "/css/img/default_man.png";
+                }else{
+                    return  "/css/img/default_woman.png";
+                }
+                return  "/css/img/default_50.png";
             }
 
             return false;

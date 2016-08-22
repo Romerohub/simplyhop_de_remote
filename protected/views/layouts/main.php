@@ -8,13 +8,15 @@ $model5= User::model()->findByPk( Yii::app()->user->id);
 if(!empty($model5)){
 	$data5 = $model5->attributes;
 //print_R($data5);
-if(!empty($data5)) {
-    $data5["last_visit"] = date("d.m.Y");
-    $data5["last_visit_time"] = date("H:i");
-    $model5->attributes = $data5;
-    if ($model5->save()) {
+    if(!empty($data5)) {
+        $data5["last_visit"] = date("d.m.Y");
+        $data5["last_visit_time"] = date("H:i");
+        $model5->attributes = $data5;
+        if ($model5->save()) {
+        }
     }
-}
+}else{
+   // $this->redirect("/");
 }
 
 ?>
