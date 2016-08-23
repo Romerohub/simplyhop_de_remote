@@ -176,3 +176,19 @@ function check_clock_time(e){
     }
 
 }
+
+
+function redirectTravel(url, el, e){
+
+   // console.log($(e.target))
+
+
+    var senderElementName = e.target.tagName.toLowerCase();
+    //console.log(senderElementName)
+    if(senderElementName == "a"){
+        return false;
+    }
+
+   // return false;
+    window.location = url;
+}

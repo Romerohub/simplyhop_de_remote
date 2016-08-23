@@ -27,7 +27,7 @@ $Mix_f = new Mix_f;
 
 ?>
 
-<div class="view" onclick=" window.location = '/travels/view?id=<? echo $data->id; ?>'">
+<div class="view" onclick=" return redirectTravel('/travels/view?id=<? echo $data->id; ?>', this, event)">
     <div class="user_data">
         <a class="img" href="/user/view?id=<? echo $u->id;?>" style="<?=$Mix_f->show_user_pic($u->id,"list_view")?>"></a>
 

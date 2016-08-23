@@ -361,13 +361,16 @@ background-color: #edf2f5;
 
 
 /****** REQUEST_FORM **********/
-
+.request_devider{
+    display: none;
+}
 .send_request{
     margin:0 auto;
     padding: 33px 52px 15px 0px;
     max-width: 616px;
     width:100%;
     min-height: 154px;
+    min-width:300px;
 }
 .send_request .title{
     margin-left: 30px;
@@ -413,5 +416,6 @@ background-color: #edf2f5;
     display: none;
     color: #3498c8;
     text-align: center;
+    padding-left: 46px;
 }
 /****** END REQUEST_FORM **********/

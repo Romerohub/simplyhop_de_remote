@@ -42,10 +42,14 @@
 
 
         //
-        $(document).click(function(event) {
+       $(document).click(function(event) {
+           console.log($(event.target));
+           if($(event.target).hasClass("input")){
+               return;
+           }
             if ($(event.target).closest(".search_ul").length) return;
             $(".search_ul").hide();
-            drow_rpute()
+           drow_rpute()
             event.stopPropagation();
         });
     });

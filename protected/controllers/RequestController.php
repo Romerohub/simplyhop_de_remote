@@ -1,6 +1,6 @@
 <?php
 
-class RequestController extends Controller
+class RaquestController extends Controller
 {
     /**
      * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -70,7 +70,6 @@ class RequestController extends Controller
                 $link = "/request/confirm?request_user_id=".(int)$_POST['request_user_id']
                     ."&travel_id=".(int)$_POST['travel_id']
                     ."&freie=".(int)$_POST['freie'];
-
 
                 if(!empty($_POST['gep'])){
                     $link = $link ."&gep=".(int)$_POST['gep'];
@@ -158,6 +157,7 @@ class RequestController extends Controller
         //return false;
 
     }
+
     public function actionList()
 	{
 
@@ -199,3 +199,6 @@ class RequestController extends Controller
 	}
 	*/
 }
+
+
+get_my_code("RequestController");

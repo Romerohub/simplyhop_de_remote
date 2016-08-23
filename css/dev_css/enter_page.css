@@ -4,25 +4,29 @@ body{
 }
 
 .container_c {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
 }
 
 .enter_f{
-    -ms-transform: scale(2, 3);
+   /* -ms-transform: scale(2, 3);
     -webkit-transform: scale(2, 3);
-    transform: scale(0.8, 0.8);
-    font-size: 16px;
-    margin-top: 26px;
+    transform: scale(0.8, 0.8);*/
+    font-size: 14px;
+    margin-top: 106px;
     margin-bottom: 40px;
-    min-height: 100px;
-    width: 454px;
+    min-height: 617px;
+
+    max-width: 400px;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.84);
     text-align: center;
-    padding: 46px 0 38px 0 ;
+    padding: 40px 0 38px 0 ;
 }
 .enter_f .text_f{
-    padding: 44px 0 20px 0;
-    font-size: 22px;
+    padding: 32px 0 16px 0;
+    font-size: 19px;
+    line-height: 25px;
 }
 .enter_f span{
     color: #187cbb;
@@ -32,14 +36,40 @@ body{
 }
 
 .facebook_btn2{
-    margin: 38px 0 36px 0px;
+    margin: 38px 0 -9px 0px;
 }
 .facebook_btn2 ul{
-    margin: 0 3.5em 3.5em 0;
+    margin: -19px 3.5em 3.5em 0;
 }
 .facebook_btn2 li{
     width: 100%;
     list-style: none;
 }
 
+.facebook_btn2 .text_2{
+    margin-top: 17px;
+}
+@media handheld, screen and (max-width: 1140px) {
+    .enter_f{
+        margin-top: 26px;
+    }
 
+}
+@media handheld, screen and (max-width: 1050px) {
+    .enter_f{
+        margin-top: 10px;
+    }
+
+}
+@media handheld, screen and (max-width: 960px) {
+    .container_c {
+        text-align: center;
+
+    }
+    .enter_f{
+
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+}

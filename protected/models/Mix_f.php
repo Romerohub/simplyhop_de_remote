@@ -104,7 +104,7 @@ class Mix_f {
             $img1 = "/upload/". $user_id."/upic/thumb_100.jpg";
             $img = $_SERVER['DOCUMENT_ROOT'].$img1;
             if(file_exists($img)){
-                return 'background: url('.$img1.') no-repeat center top';
+                return 'background: url('.$img1.') no-repeat center top; background-size: 102%;';
                 // return $img;
             }else{
                 if($u->geschlecht == 1){
@@ -119,7 +119,7 @@ class Mix_f {
             $img1 = "/upload/". $user_id."/upic/thumb_resize_50.jpg";
             $img = $_SERVER['DOCUMENT_ROOT'].$img1;
             if(file_exists($img)){
-                return 'background: url('.$img1.') no-repeat center top';
+                return 'background: url('.$img1.') no-repeat center top; ';
                 // return $img;
             }else{
                 if($u->geschlecht == 1){
@@ -129,7 +129,7 @@ class Mix_f {
                     return  'background: url(/css/img/default_woman.png) no-repeat 0px 0px;   background-size: 99%;';
                    // return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
                 }
-                return  'background: url(/css/img/icons_dev2.png) no-repeat -9px -1894px;';
+                return  'background: url(/css/img/default_50.png) no-repeat center center;';
             }
         }
         if($size == "view_small_40"){
@@ -146,7 +146,7 @@ class Mix_f {
                     return  'background: url(/css/img/default_woman.png) no-repeat 0px 0px;   background-size: 99%;';
                    // return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
                 }
-                return  'background: url(/css/img/icons_dev2.png) no-repeat -9px -1894px;';
+                return  'background: url(/css/img/default_50.png) no-repeat center center;';
             }
         }
 

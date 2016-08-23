@@ -92,6 +92,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+        $this->layout='main_dev';
 //print_R();
       //  Yii::app()->user->id = 2;
        /// print_R(Yii::app()->user->gender); exit;

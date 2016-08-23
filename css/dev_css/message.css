@@ -92,6 +92,9 @@
 }
 
 /* msg items **/
+.msg_item .time_small{
+    display: none;
+}
 .msg_item .text::after {
     content: '';
     position: absolute;
@@ -129,7 +132,7 @@
 }
 .msg_item .time{
     vertical-align: middle;
-    padding: 30px 0 20px 22px;
+    padding: 19px 0 20px 22px;
 }
 
 

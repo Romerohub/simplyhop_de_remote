@@ -15,7 +15,8 @@
     <script src="/css/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/dev_css/enter_page.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/my.css" />
+    <!--link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/my.css" /-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -24,7 +25,7 @@
 <div class="center-block container_c" >
 
     <div class="enter_f">
-        <img src="/css/img/main_logo.png">
+        <img src="/css/img/main_logo.png" width="270px">
 
 
         <div  class="text_f">
@@ -36,7 +37,7 @@
             Fahrten anbieten oder<br> mitfahren.
         </div>
 
-        <img src="/css/img/map.png">
+        <img src="/css/img/map.png" style="max-width:333px; width: 100%;">
 
 
         <? $this->widget('ext.eauth.EAuthWidget', array('action' => 'site/login')); ?>
