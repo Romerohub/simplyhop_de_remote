@@ -133,7 +133,7 @@ $Mix_f = new Mix_f;
 
 
             <? if($data->travel_owner_id != Yii::app()->user->id && $res_places > 0){?>
-                <a href="#send_request_<?=$data->id?>"  data-lity>Mitfahren</a>
+                <a href="#send_request_<?=$data->id?>" class="view_send_request" data-lity>Mitfahren</a>
                 <div id="send_request_<?=$data->id?>" style="background:#fff" class="lity-hide send_request">
                    <? $model = $data;?>
                 <? include($_SERVER['DOCUMENT_ROOT']."/protected/views/parts/request_form.php")?>

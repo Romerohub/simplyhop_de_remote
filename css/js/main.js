@@ -180,12 +180,12 @@ function check_clock_time(e){
 
 function redirectTravel(url, el, e){
 
-   // console.log($(e.target))
+    console.log($(e.target).hasClass("view_send_request"))
 
-
+//return false;
     var senderElementName = e.target.tagName.toLowerCase();
     //console.log(senderElementName)
-    if(senderElementName == "a"){
+    if(senderElementName == "a" && $(e.target).hasClass("view_send_request")){
         return false;
     }
 

@@ -1,8 +1,11 @@
-<div class="r_sended" style=" ">REQUEST SENDED</div>
+<div class="r_sended" style=" ">
+     Anfrage verschickt.<br>
+     Vielen Dank!
+</div>
 
 <form  autocomplete="off" class="form_form" method="post" onsubmit="return false;">
     <div class="title">
-        SEND REQUEST
+        Mitfahren
     </div>
 
     <input type="hidden" name="request_user_id" value="<?= Yii::app()->user->id?>">
