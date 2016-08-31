@@ -55,8 +55,9 @@ if(!empty($message->text)){
         <div class="data_2"> <? $Mix_f->count_review($u->id) ; ?></div>
     </div>
     <div class="msg_info">
-        <div class="data_3"><span></span><? $Mix_f-> show_date_week($travel); ?></div>
-        <div class="data_4"><span><?=date("d.m.Y", $message_date)?> in <?=date("H:i", $message_date)?></span> <span class="data_4_1"><?=$travel->form_start?>, <?=$travel->form_stadt?>&#8594; <?=$travel->form_ziel?></span></div>
+        <div class="data_3"><span></span><a href="/travels/view?id=<?=$travel->id?>"><? $Mix_f-> show_date_week($travel); ?></a></div>
+        <div class="data_4"><span><?=date("d.m.Y", $message_date)?> um <?=date("H:i", $message_date)?></span>
+            <a href="/travels/view?id=<?=$travel->id?>"><span class="data_4_1"><?=$travel->form_start?>, <?=$travel->form_stadt?>&#8594; <?=$travel->form_ziel?></span></a></div>
         <div class="data_5"> <?=$message_text?></div>
         <div class="data_6"> <a href="/message/dialog?trvl_id=<?=$data->travel_id?>&usr_id=<?=$usr_id?>">Antworten</a></div>
     </div>

@@ -54,8 +54,12 @@
     margin1: 0 0 0 57px;
     width: 100%;
     max-width: 294px;
-    color: #00c810;
+
 }
+.msg_title .title .date_visit a{
+     color: #00c810;
+ }
+
 .msg_title .title .date_visit span{
     display: inline-block;
     margin-right: 15px;
@@ -63,6 +67,9 @@
     width: 12px;
     border-radius: 10px;
     background-color: #00c810;
+}
+.msg_title .title .rote_name a{
+    color: rgb(79, 79, 79);
 }
 .msg_title .title .rote_name{
     vertical-align: top;
@@ -119,6 +126,7 @@
 
 }
 .msg_item .img{
+    display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -163,8 +171,26 @@
 .msg_item_me .time{
     padding: 22px 24px 12px 0;
 }
+.msg_item_me .text span{
+    position: absolute;
+}
+.msg_item_me1 .text::after {
+    content: '';
+   /* position: absolute;
+    right: 69px;*/
 
-
+    border: 14px solid transparent;
+    border-left: 14px solid #017eba;
+}
+.msg_item_me .text::before {
+    content: '';
+   /* position: absolute;
+    right: 68px;*/
+    float: right;
+    margin-right: -45px;
+    border: 14px solid transparent;
+    border-left: 14px solid #017eba;
+}
 .msg_send{
     position: relative;
     padding: 38px 40px 31px 68px;

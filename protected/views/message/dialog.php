@@ -26,10 +26,10 @@ $Mix_f = new Mix_f();
     <div class="msg_title">
         <span class="title_img" style="  background: url('/css/img/icons_dev2.png') #017eba -4px -1127px;"></span>
         <div class="title">
-            <a class="img" style="<?=$Mix_f->show_user_pic($receiver_user,"view_small")?>"></a>
-            <div class="name"><?=$name?></div>
-            <div class="date_visit"><span></span><? $Mix_f-> show_date_week($travel); ?></div>
-            <div class="rote_name"><?=$travel->form_start?>,  <?=$travel->form_stadt?> ->  <?=$travel->form_ziel?></div>
+            <a class="img" style="<?=$Mix_f->show_user_pic($receiver_user,"view_small")?>" href="/user/view?id=<?=$receiver_user?>"></a>
+            <div class="name"><a href="/user/view?id=<?=$receiver_user?>"><?=$name?></a></div>
+            <div class="date_visit"><span></span><a href="/travels/view?id=<?=$travel->id?>"><? $Mix_f-> show_date_week($travel); ?></a></div>
+            <div class="rote_name"><a href="/travels/view?id=<?=$travel->id?>"><?=$travel->form_start?>,  <?=$travel->form_stadt?> ->  <?=$travel->form_ziel?></a></div>
 
         </div>
     </div>
@@ -112,6 +112,7 @@ $(document).ready(function(){
                     //$(".nano").nanoScroller({ scroll: 'bottom' });
                     //alert(2)
                     $("#msgs_list").scrollTop($("#msgs_list")[0].scrollHeight);
+                    $(".message .new_messages").hide()
                 });
 
             }

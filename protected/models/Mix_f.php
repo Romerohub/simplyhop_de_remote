@@ -123,10 +123,10 @@ class Mix_f {
                 // return $img;
             }else{
                 if($u->geschlecht == 1){
-                    return  'background: url(/css/img/default_man.png) no-repeat 0px 0px;   background-size: 99%;';
+                    return  'background: url(/css/img/default_man_2.png) no-repeat 0px 0px;   background-size: 99%;';
                    // return  'background: url(/css/img/icons_dev2.png) no-repeat -24px -1248px';
                 }elseif($u->geschlecht == 2){
-                    return  'background: url(/css/img/default_woman.png) no-repeat 0px 0px;   background-size: 99%;';
+                    return  'background: url(/css/img/default_woman_2.png) no-repeat 0px 0px;   background-size: 99%;';
                    // return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
                 }
                 return  'background: url(/css/img/default_50.png) no-repeat center center;';
@@ -140,10 +140,10 @@ class Mix_f {
                 // return $img;
             }else{
                 if($u->geschlecht == 1){
-                    return  'background: url(/css/img/default_man.png) no-repeat 0px 0px;   background-size: 99%;';
+                    return  'background: url(/css/img/default_man_2.png) no-repeat 0px 0px;   background-size: 99%;';
                    // return  'background: url(/css/img/icons_dev2.png) no-repeat -24px -1248px';
                 }elseif($u->geschlecht == 2){
-                    return  'background: url(/css/img/default_woman.png) no-repeat 0px 0px;   background-size: 99%;';
+                    return  'background: url(/css/img/default_woman_2.png) no-repeat 0px 0px;   background-size: 99%;';
                    // return  'background: url(/css/img/icons_dev2.png) no-repeat -30px -1393px';
                 }
                 return  'background: url(/css/img/default_50.png) no-repeat center center;';
@@ -159,9 +159,9 @@ class Mix_f {
                 return $img1;
             }else{
                 if($u->geschlecht == 1){
-                    return  "/css/img/default_man.png";
+                    return  "/css/img/default_man_2.png";
                 }else{
-                    return  "/css/img/default_woman.png";
+                    return  "/css/img/default_woman_2.png";
                 }
                 return  "/css/img/default_50.png";
             }
@@ -253,13 +253,17 @@ class Mix_f {
 
 
     function count_review($u_id, $v=1){
-
+        $y = 0;
         $total = 0;
         $s = 0;
         $Reviews=Reviews::model()->findAll('user_receiver=:user_receiver', array(':user_receiver'=>$u_id));
         foreach($Reviews as $kkk=>$vvv){
             $total = $total+1;
             $s = $s+ $vvv->vote;
+            $y = $y+1;
+        }
+        if($y == 0){
+            return;
         }
         if($total==0){
             $r = 0;

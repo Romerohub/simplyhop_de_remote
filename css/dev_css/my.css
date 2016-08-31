@@ -105,20 +105,21 @@ a:hover{
     color: #00c810;
 }
 .message{
-    background: url("/css/img/icons_dev.png") no-repeat -74px -115px;
+    /*background: url("/css/img/icons_dev.png") no-repeat -74px -115px;*/
     color: #c3c4d3;
     display: inline-block;
-    padding: 32px 0 0 0;
+    padding: 0px 0 0 0;
     margin-right: 30px;
     margin-top: 40px;
 }
 .message:hover{
-    background: url("/css/img/icons_dev.png") no-repeat -74px -195px;
+    /*background: url("/css/img/icons_dev.png") no-repeat -74px -195px;*/
 }
-.message span{
+.message span.new_messages{
+    text-align: center;
     position: absolute;
-    margin-top: -26px;
-    margin-left: 47px;
+    margin-top: 7px;
+    margin-left: 42px;
     font-size: 12px;
     background-color: #0099ff;
     border-radius: 14px;
@@ -126,15 +127,35 @@ a:hover{
     width: 17px;
     text-align: center;
 }
+.message span.icon{
+    margin: 0 auto;
+    display: block;
+    width: 20px;
+    height: 28px;
+    background: url("/css/img/icons_dev.png") no-repeat -103px -117px
+}
+.message:hover span.icon{
+    background:url("/css/img/icons_dev.png") no-repeat -103px -197px
+}
 .my_travels{
-    background: url("/css/img/icons_dev.png") no-repeat -66px -19px;
+   /* background: url("/css/img/icons_dev.png") no-repeat -66px -19px;*/
     color: #c3c4d3;
     display: inline-block;
     padding: 36px 0 0 0;
     margin-right: 33px;
 }
 .my_travels:hover{
-    background: url("/css/img/icons_dev.png") no-repeat -64px  -356px;
+    /*background: url("/css/img/icons_dev.png") no-repeat -64px  -356px;*/
+}
+.my_travels span.icon{
+    margin: 0 auto;
+    display: block;
+    width: 16px;
+    height: 27px;
+    background: url("/css/img/icons_dev.png") no-repeat -107px -25px;
+}
+.my_travels:hover span.icon{
+    background: url("/css/img/icons_dev.png") no-repeat -105px -362px
 }
 .profile{
     white-space: nowrap;
@@ -143,13 +164,13 @@ a:hover{
     text-align: center;
     width: 163px;
     display: inline-block;
-    padding: 22px 24px 0 0;
+    padding: 22px 0px 0 0;
     color: #017eba;
     font-size: 18px;
 }
 .profile .foto_profile{
 
-    padding: 0  0 2px 19px;
+    /*padding: 0  0 2px 19px;*/
 
 }
 .profile span{

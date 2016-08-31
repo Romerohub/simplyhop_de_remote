@@ -157,7 +157,7 @@ $Mix_f = new Mix_f;
         <?}?>
 
     </div>
-
+<div style="clear:both;"></div>
 
 </div>
 

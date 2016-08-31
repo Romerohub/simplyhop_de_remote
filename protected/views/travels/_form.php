@@ -175,14 +175,18 @@
                 </div>
                 <script>
                     $(document).ready(function() {
+                        var newDate = new Date();
+                        console.log(newDate);
                         $('#datePicker2')
                             .datepicker({
                                 autoclose: true,
                                 format: 'dd.mm.yyyy',
                                 language: "de",
-                                startDate: 'today'
+                               // startDate: 'today'
+                                startDate:newDate
                             })
                             .on('changeDate', function (e) {
+                               // console.log(newDate.today());
                                 // Revalidate the date field
                                 //$('#eventForm').formValidation('revalidateField', 'date');
                             });
@@ -203,15 +207,16 @@
                         <input type="text" id="date_clock" onkeyup="return check_clock_time(this)" name="Travels[datum_start_time]"  placeholder="00:00">
                     
                     <div id="passed_time" style="
+                    font-size: 11px;;
                     display: none;
                       border: 1px solid rgb(216, 85, 85);
-					  padding: 4px 23px;
+					  padding: 4px 16px;
 					  color: rgb(228, 94, 94);
 					  position: absolute;
-					  margin-left: 53px;
-					  margin-top: -2px;
+					      margin-left: 89px;
+                        margin-top: -6px;
 					  width: 127px;
-					  ">Time passed</div>
+					  ">Die Uhrzeit liegt in <br>der Vergangenheit!</div>
                     </div>
                 </div>
 

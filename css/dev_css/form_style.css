@@ -294,6 +294,7 @@
 
 }
 .form_input_2.date_clock .field_name_2{
+    width: 86px;
     display: inline-block;
 }
 .form_input_2.date_clock span{
@@ -356,7 +357,7 @@
     background:url("/css/img/icons_dev2.png") no-repeat -9px -346px
 }
 .form_form .standart_checkbox label.active{
-    background:url("/css/img/icons_dev2.png") no-repeat -9px -289px
+    background:url("/css/img/icons_dev2.png") no-repeat -9px -290px
 }
 .form_form1 .standart_checkbox input{
     display: none;

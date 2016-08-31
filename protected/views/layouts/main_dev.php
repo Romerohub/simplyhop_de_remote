@@ -10,7 +10,7 @@
     <!--[if lt IE 8]>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
     <![endif]-->
-
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/bootstrap-3.3.2-dist/css/bootstrap.min.css">
     <script src="/css/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
 

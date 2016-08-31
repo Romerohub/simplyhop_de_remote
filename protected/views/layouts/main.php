@@ -5,7 +5,24 @@ ini_set(' display_errors', '1');
 
 //echo Yii::app()->user->id."2";
 $model5= User::model()->findByPk( Yii::app()->user->id);
+// echo Yii::app()->request->requestUri;
+//echo Yii::app()->createAbsoluteUrl(Yii::app()->request->url);
+//echo Yii::app()->getBaseUrl(true);
 if(!empty($model5)){
+    if(empty($model5->vorname) || empty($model5->email)
+        || empty($model5->form_handy)
+        || empty($model5->geschlecht)
+        || empty($model5->geburtsdatum)
+    ){
+if(!preg_match('!\/user\/update!is',Yii::app()->request->requestUri)){
+    $this->redirect("/user/update?id=".$model5->id);
+  //  exit;
+}
+       //
+
+    }
+
+
 	$data5 = $model5->attributes;
 //print_R($data5);
     if(!empty($data5)) {
@@ -16,7 +33,7 @@ if(!empty($model5)){
         }
     }
 }else{
-   // $this->redirect("/");
+    $this->redirect("/");
 }
 
 ?>
@@ -38,7 +55,7 @@ if(!empty($model5)){
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
-
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
 
 
@@ -175,11 +192,13 @@ z-index: 99999;
                  // echo $new_messages;
                     ?>
                     <? if($new_messages>0){?>
-                    <span style=""><?=$new_messages?></span>
+                    <span style="" class="new_messages"><?=$new_messages?></span>
                     <?}?>
+                    <span class="icon"></span>
                     Nachrichten
                 </a>
                 <a  href="/travels/driverlist" class="my_travels">
+                    <span class="icon"></span>
                     Meine Fahrten
                 </a>
                 <a  href="/user/view?id=<? echo Yii::app()->user->id?>" class="profile">

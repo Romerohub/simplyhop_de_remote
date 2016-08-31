@@ -163,7 +163,7 @@ function go_to_city_filtr( e){
 function check_clock_time(e){
     var t = $(e).val()
 
-    patt2 = /^[0-2][0-3]:[0-5][0-9]$/g;
+    patt2 = /^[0-2][0-9]:[0-5][0-9]$/g;
 
     result2 = patt2.test(t);
 

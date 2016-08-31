@@ -383,13 +383,16 @@ background-color: #edf2f5;
 .send_request .form_form .form_label{
     width: 83px;
 }
+.send_request .form_form .form_label:first-child{
+    width: 123px;
+}
 .send_request  .form_form .standart_celector_2 .input{
     width: 56px;
     background: url("/css/img/icons_dev2.png") no-repeat 20px -6px;
     height: 26px;
 }
 .send_request   .standart_celector_2 .form_input_1{
-    width: 105px !important;
+    width: 86px !important;
 }
 
 .send_request .button_form{
@@ -397,6 +400,7 @@ background-color: #edf2f5;
    /* margin-left: -17px;*/
 }
 .send_request  .button_form button{
+    background-color: #00c810;
     padding: 3px 17px 2px 23px;
     margin-top: -1px;
 }

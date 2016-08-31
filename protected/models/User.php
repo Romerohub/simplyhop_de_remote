@@ -37,6 +37,7 @@ class User extends CActiveRecord
 		return array(
 			array('username, password', 'required'),
 			array('username, password, email', 'length', 'max'=>128),
+			array('geburtsdatum', 'date', 'format'=>'d.M.yyyy'),
 			array('profile', 'safe'),
              array(
                  'farbe,
@@ -97,14 +98,14 @@ class User extends CActiveRecord
 
 			'form_name' => 'form_name',
 
-            'geschlecht' => 'Geschlecht',
-            'vorname' => 'Vorname',
+            'geschlecht' => 'Geschlecht*',
+            'vorname' => 'Vorname*',
             'nachname' => 'Nachname',
-            'email' => 'E-mail',
+            'email' => 'E-Mail*',
             'form_stadt' => 'Stadt',
-            'form_handy' => 'Handy',
+            'form_handy' => 'Handy*',
             'form_automarke' =>"Automarke und<br>Model",
-            'geburtsdatum' => 'Geburtsdatum',
+            'geburtsdatum' => 'Geburtsdatum*',
             'form_uber_mich' => 'Über mich',
             'raucher' => 'Raucher:',
             'haustiere' => 'Haustiere:',

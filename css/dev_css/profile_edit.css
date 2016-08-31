@@ -76,6 +76,10 @@
     padding: 4px;
     border: 1px solid #7d7d7d;
 }
+.profile_form .row .field input.error{
+    background: #FEE;
+    border-color: #C00;
+}
 .profile_form .row .field textarea{
     width: 359px;
     padding: 4px;

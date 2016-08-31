@@ -71,6 +71,7 @@ $u=User::model()->findByPk($model->id);
              <div class="pr_comments_list">
                  <?php $this->widget('zii.widgets.CListView', array(
                      'dataProvider'=>$dataProviderReviews,
+                     'emptyText'=>"",
                      'itemView'=>'application.views.reviews._view',
                      'template'=>"{items} ",
                  )); ?>

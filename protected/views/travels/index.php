@@ -28,6 +28,7 @@ $Mix_f = new Mix_f;
             'dataProvider'=>$dataProvider,
             'ajaxUpdate'=>false,
             'itemView'=>'_view',
+            'emptyText'=>' Leider gibt es momentan keine Mitfahrgelegenheiten. Versuchen Sie es bitte später noch einmal!',
            // 'template' => "<div>{summary}</div>{sorter}\n{items}\n{pager}",
             'summaryText'=>' <div class="mitfahrten">{count}   Mitfahrgelegenheiten</div>',
             //'template'=>"{summary}{items} {pager}",

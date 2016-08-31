@@ -48,38 +48,45 @@
                 <div class="row">
                     <div class="label"><?php echo $form->labelEx($model,'vorname'); ?></div>
                     <div class="field">
-                        <?php echo $form->textField($model,'vorname',array('size'=>60,'maxlength'=>128)); ?>
-                        <?php echo $form->error($model,'vorname'); ?>
+                        <? ?>
+                        <?php echo $form->textField($model,'vorname',array('size'=>60,'maxlength'=>128,
+                            "class"=>((empty($model->vorname))?"error":"")
+                        )); ?>
+                        <?php// echo $form->error($model,'vorname'); ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="label"><?php echo $form->labelEx($model,'nachname'); ?></div>
                     <div class="field">
                         <?php echo $form->textField($model,'nachname',array('size'=>60,'maxlength'=>128)); ?>
-                        <?php echo $form->error($model,'nachname'); ?>
+                        <?php// echo $form->error($model,'nachname'); ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="label"><?php echo $form->labelEx($model,'form_stadt'); ?></div>
                     <div class="field">
                         <?php echo $form->textField($model,'form_stadt',array('size'=>60,'maxlength'=>128)); ?>
-                        <?php echo $form->error($model,'form_stadt'); ?>
+                        <?php// echo $form->error($model,'form_stadt'); ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="label"><?php echo $form->labelEx($model,'form_handy'); ?></div>
                     <div class="field">
                         <?php echo $form->textField($model,'form_handy',array('size'=>60,'maxlength'=>128,
-                            'placeholder'=>'(+49) ')); ?>
-                        <?php echo $form->error($model,'form_handy'); ?>
+                            'placeholder'=>'(+49) ',
+                            "class"=>((empty($model->form_handy))?"error":"")
+                        )); ?>
+                        <?php// echo $form->error($model,'form_handy'); ?>
                     </div>
                 </div>
                 <div class="row email_3">
                     <div class="label"><?php echo $form->labelEx($model,'email'); ?></div>
                     <div class="field">
-                        <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
+                        <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128,
+                            "class"=>((empty($model->email))?"error":"")
+                        )); ?>
                         <? if(!empty($model->email)){?><span></span><?}?>
-                        <?php echo $form->error($model,'email'); ?>
+                        <?php// echo $form->error($model,'email'); ?>
                     </div>
                 </div>
 
@@ -92,7 +99,7 @@
 
                 <script>
                     $(document).ready(function() {
-                        $('#datePicker4')
+                        /*$('#datePicker4')
                             .datepicker({
                                 autoclose: true,
                                 format: 'dd.mm.yyyy',
@@ -102,14 +109,16 @@
                             .on('changeDate', function (e) {
                                 // Revalidate the date field
                                 //$('#eventForm').formValidation('revalidateField', 'date');
-                            });
+                            });*/
                     })
                 </script>
                 <div class="row date_3">
                     <div class="label"><?php echo $form->labelEx($model,'geburtsdatum'); ?></div>
                     <div class="field">
                         <?php echo $form->textField($model,'geburtsdatum',array('size'=>60,'maxlength'=>128,
-                            'placeholder'=>'tt.mm.jjjj', 'id'=>'datePicker4')); ?>
+                            'placeholder'=>'tt.mm.jjjj', 'id'=>'datePicker4',
+                            "class"=>((empty($model->geburtsdatum))?"error":"")
+                        )); ?>
                         <?php echo $form->error($model,'geburtsdatum'); ?>
                     </div>
                 </div>
@@ -118,7 +127,7 @@
                     <div class="field">
                         <?php echo $form->textArea($model,'form_uber_mich',array('size'=>160,'maxlength'=>128,
                         )); ?>
-                        <?php echo $form->error($model,'form_uber_mich'); ?>
+                        <?php //echo $form->error($model,'form_uber_mich'); ?>
                     </div>
                 </div>
                 <div class="row upload_user_f">
@@ -151,7 +160,7 @@
                     <div class="label"><?php echo $form->labelEx($model,'form_automarke'); ?></div>
                     <div class="field">
                         <?php echo $form->textField($model,'form_automarke',array('size'=>60,'maxlength'=>128)); ?>
-                        <?php echo $form->error($model,'form_automarke'); ?>
+                        <?php //echo $form->error($model,'form_automarke'); ?>
                     </div>
                 </div>
 
@@ -159,7 +168,7 @@
                     <div class="label"><?php echo $form->labelEx($model,'farbe'); ?></div>
                     <div class="field">
                         <?php echo $form->textField($model,'farbe',array('size'=>60,'maxlength'=>128)); ?>
-                        <?php echo $form->error($model,'farbe'); ?>
+                        <?php //echo $form->error($model,'farbe'); ?>
                     </div>
                 </div>
                 <div class="row upload_user_f auto_foto">
@@ -274,6 +283,7 @@
         $this->widget('zii.widgets.CListView', array(
             'dataProvider'=>$dataProviderReviews,
             //'itemView'=>'_review',
+            'emptyText'=>'',
             'itemView'=>'application.views.reviews._view',
             'template'=>"{items} ",
         ));
