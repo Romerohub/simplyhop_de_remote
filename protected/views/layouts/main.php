@@ -261,11 +261,11 @@ z-index: 99999;
                 <div class="logo_desc_f"> City - einfach einsteigen</div>
             </div>
             <div class="f_social" >
-                <a href="" ></a>
-                <a href="" ></a>
+                <a href="https://www.facebook.com/Simply-Hop-1806770426254277/?fref=ts" target="_blank" ></a>
+               
             </div><!--f_social-->
             <div class="fdata">
-                (c) 2016 simply hop
+                &copy; 2016 simply hop
             </div>
         </div>
 
@@ -274,7 +274,21 @@ z-index: 99999;
                 Simply <span>Hop Company</span>
             </div>
             <div class="f_text">
-                <a href="">Über uns</a><br>
+
+<a href="/site/datenschutzerklaerung/">Datenschutzerklärung</a><br>
+<a href="/site/impressum/">Impressum</a><br>
+<a href="/site/agb/">AGB</a><br>
+<?/*
+Simply Hop
+  <br />
+  Marcus Ritter<br />
+Potsdamer Platz 10 -
+10785 Berlin<br />
+Telefon:  +49 030 300 114 621 <br />
+E-Mail:  <a href="mailto:service@simplyhop.com">service@simplyhop.com</a><br />
+USt-IdNr.: DE 34 494 01388
+<br>
+*/?>
                 <!--Cookies<br>
                 Mitfahr-Kodex<br>
                 AGB<br>
@@ -286,10 +300,13 @@ z-index: 99999;
         <div class="col-sm-1 " > </div>
         <div class="col-sm-3 f_right" >
             <div class="f_title">
-                Simply <span>Hop Blog</span>
+                Simply <span>Hop Blog<br />
+</span>
             </div>
             <div class="fr_text">
-                <a href="">Alle Blog-Artikel sehen</a><br>
+                <a href="">Alle Blog-Artikel sehen</a><br><br />
+<script src="//nht-2.extreme-dm.com/t.js" id="eX-simply1-2" async defer></script><br />
+
 
             </div>
         </div>

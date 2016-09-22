@@ -17,7 +17,8 @@ class SiteController extends Controller
                 'users'=>array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions'=>array('create','update','filtr','logout'),
+                'actions'=>array('create','update','filtr',
+                    'datenschutzerklaerung','impressum','agb','logout'),
                 'users'=>array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -28,6 +29,18 @@ class SiteController extends Controller
                 'users'=>array('*'),
             ),
         );
+    }
+    public function actionAgb()
+    {
+          $this->render('agb-simplyhop');
+    }
+    public function actionDatenschutzerklaerung()
+    {
+        $this->render('datenschutzsimplyhop');
+    }
+    public function actionImpressum()
+    {
+        $this->render('impressum');
     }
 	/**
 	 * Declares class-based actions.
