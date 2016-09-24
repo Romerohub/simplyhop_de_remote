@@ -53,6 +53,10 @@ class UserController extends Controller
 	public function actionView($id)
 	{
 
+        if(!empty($_GET['logout'])){
+            Yii::app()->user->logout();
+        }
+
         $sort = new CSort;
         $sort->defaultOrder = 'id DESC';
         $sort->attributes = array( );

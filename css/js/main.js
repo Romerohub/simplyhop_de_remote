@@ -33,10 +33,10 @@ $(document).ready(function(){
 
 
     $("#choose_u_pic").change(function(){
-        $("#sho_u_pic_path").text($(this).val());
+      //  $("#sho_u_pic_path").text($(this).val());
     })
     $("#choose_a_pic").change(function(){
-        $("#sho_a_pic_path").text($(this).val());
+      //  $("#sho_a_pic_path").text($(this).val());
     })
 
    /* $(".btn-group .btn-primary").click(function(){

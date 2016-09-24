@@ -51,7 +51,12 @@ $u=User::model()->findByPk($model->id);
 
                     <? if($u->id == Yii::app()->user->id){?>
                         <a style="" class="profile_edit_btn" href="/user/update?id=<?=$u->id?>">Profil bearbeiten</a>
+                        <br>
+                        <a style="" class="profile_edit_btn" href="/user/view?id=<?=$u->id?>&logout=Y">Log out</a>
                     <?}?>
+
+
+
                 </div>
                 <? if(!empty($u->form_uber_mich)){ ?>
                 <div class="pr_text_title">Über mich</div>

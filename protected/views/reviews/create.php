@@ -12,4 +12,4 @@ $this->menu=array(
 	array('label'=>'Manage Reviews', 'url'=>array('admin')),
 );
 ?>
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model, 'data'=>$data)); ?>

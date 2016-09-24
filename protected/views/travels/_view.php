@@ -147,11 +147,16 @@ $Mix_f = new Mix_f;
            <? if(empty($tmp_data->user_request_id)){?>
                 <?if(!$traveller){?>
                     <div class="data_16" style=""><a href="/travels/reviewslist?rout=<?=$data->id?>">Mitfahrer bewerten</a></div>
+                    <div class="data_16" style="">
+                        <a href="/travels/create?rout=<?=$data->id?>">Edit</a>
+                        <a href="/travels/delete?id=<?=$data->id?>">Del</a>
+                    </div>
+
                 <?}else{?>
-                    <div class="data_16" style=""><a href="/reviews/create?ur=<?=$data->travel_owner_id?>">Fahrer bewerten</a></div>
+                    <div class="data_16" style=""><a href="/reviews/create?ur=<?=$data->travel_owner_id?>&t1=Y">Fahrer bewerten</a></div>
                 <?}?>
            <? }else{ ?>
-                <div class="data_16" style=""><a href="/reviews/create?ur=<?=$tmp_data->user_request_id?>">Fahrer bewerten</a></div>
+                <div class="data_16" style=""><a href="/reviews/create?ur=<?=$tmp_data->user_request_id?>&t2=<?=$data->id?>">Fahrer bewerten</a></div>
             <?}?>
 
         <?}?>

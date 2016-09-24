@@ -23,6 +23,7 @@ $this->menu=array(
             'dataProvider'=>$dataProvider,
             'itemView'=>'_view',
             'template'=>"{items} ",
+            'emptyText'=>"",
         )); ?>
 
 

@@ -179,6 +179,10 @@ class SiteController extends Controller
                 $this->redirect("/site/filtr");
             }
 		}
+        if(!Yii::app()->user->isGuest){
+            $this->redirect("/site/filtr");
+        }
+
 		// display the login form
 		$this->render('login',array('model'=>$model));
 	}
@@ -207,6 +211,13 @@ class SiteController extends Controller
             if($model->validate() && $model->login())
                 $this->redirect(Yii::app()->user->returnUrl);
         }
+
+
+        if(!Yii::app()->user->isGuest){
+            $this->redirect("/site/filtr");
+        }
+
+
         // display the login form
         $this->render('login',array('model'=>$model));
 	}

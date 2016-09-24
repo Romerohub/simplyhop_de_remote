@@ -2,6 +2,8 @@
 /* @var $this TravelsController */
 /* @var $model Travels */
 /* @var $form CActiveForm */
+
+//print_R($old_data);
 ?>
 
 
@@ -92,6 +94,7 @@
                 <input type="hidden"  value="<?=Yii::app()->user->id?>" name="Travels[travel_owner_id]" >
                 <input type="hidden"  value="1" name="Travels[position_from_id]" >
                 <input type="hidden"  value="1" name="Travels[position_destination_id]" >
+                <input type="hidden"  value="<?=((!empty($old_data['id'])?$old_data['id']:""))?>" name="Travels[id]" >
 
                 <div class="form_line standart searching">
                     <div class="form_label">
@@ -99,7 +102,7 @@
                     </div>
                     <div class="form_input_1 select_input1">
 
-                        <input type="text"  name="Travels[form_stadt]" class=" city_search" id="city_search" placeholder="Stadt eintragen">
+                        <input type="text"  name="Travels[form_stadt]" value="<?=((!empty($old_data['form_stadt'])?$old_data['form_stadt']:""))?>" class=" city_search" id="city_search" placeholder="Stadt eintragen">
 
                     </div>
                     <div class="separate"></div>
@@ -114,7 +117,9 @@
                     </div>
                     <div class="form_input_1">
 
-                        <input type="text" class="city_street"  name="Travels[form_start]"  id="start_point" placeholder="Treffpunkt">
+                        <input type="text" class="city_street"  name="Travels[form_start]"
+                               value="<?=((!empty($old_data['form_start'])?$old_data['form_start']:""))?>"
+                               id="start_point" placeholder="Treffpunkt">
 
 
                     </div>
@@ -130,7 +135,9 @@
                     </div>
                     <div class="form_input_1">
 
-                        <input type="text" class="city_street" name="Travels[form_ziel]"  id="end_point" placeholder="Ankunftspunkt">
+                        <input type="text" class="city_street" name="Travels[form_ziel]"
+                             value="<?=((!empty($old_data['form_ziel'])?$old_data['form_ziel']:""))?>"
+                             id="end_point" placeholder="Ankunftspunkt">
 
                     </div>
                     <div class="separate"></div>
@@ -140,7 +147,7 @@
 
                 </div>
 
-                <div id="exaple_field">
+                <div id="exaple_field" style="display: none;">
                     <div class="form_line standart searching extra_points" >
                         <div class="form_label">
                             Zwischenstopp 1
@@ -158,7 +165,7 @@
 
                     </div>
                 </div>
-                <div class="form_line standart extra_point_add searching">
+                <div class="form_line standart extra_point_add searching" style="display: none;">
                     <div class="form_label">
 
                     </div>
@@ -198,13 +205,17 @@
                         Datum <span>Start</span>
                     </div>
                     <div class="form_input_1 date_callendar" >
-                        <input type="text" id="datePicker2"   name="Travels[datum_start]"  placeholder="tt.mm.jjjj">
+                        <input type="text" id="datePicker2"   name="Travels[datum_start]"
+                               value="<?=((!empty($old_data['datum_start'])?$old_data['datum_start']:""))?>"
+                               placeholder="tt.mm.jjjj">
 
                     </div>
 
                     <div class="form_input_2 date_clock">
                         <div class="field_name_2">Uhrzeit&nbsp;<span>Start</span></div>
-                        <input type="text" id="date_clock" onkeyup="return check_clock_time(this)" name="Travels[datum_start_time]"  placeholder="00:00">
+                        <input type="text" id="date_clock"
+                               value="<?=((!empty($old_data['datum_start_time'])?str_replace(".",":",$old_data['datum_start_time']):""))?>"
+                               onkeyup="return check_clock_time(this)" name="Travels[datum_start_time]"  placeholder="00:00">
                     
                     <div id="passed_time" style="
                     font-size: 11px;;
@@ -227,7 +238,8 @@
                         Umweg
                     </div>
                     <div class="form_input_1">
-                        <div class="input">5 Min.</div>
+                        <? $form_umweg_var =  ((!empty($old_data['form_umweg'])?$old_data['form_umweg']:"5"))?>
+                        <div class="input"><?=$form_umweg_var?> Min.</div>
                         <ul class="search_ul">
                             <li >0 Min.</li>
                             <li >5 Min.</li>
@@ -235,7 +247,7 @@
                             <li >15 Min.</li>
 
                         </ul>
-                        <input type="hidden" class="" name="Travels[form_umweg]" value="5" id="" placeholder="">
+                        <input type="hidden" class="" name="Travels[form_umweg]" value="<?=$form_umweg_var?>" id="" placeholder="">
                     </div>
                 </div>
                 <? /*<div class="form_line standart_3">
@@ -261,7 +273,7 @@
                         <span> Treffpunkt etc.</span>
                     </div>
                     <div class="form_input_1">
-                        <textarea  name="Travels[form_sonstige_inweise]" ></textarea>
+                        <textarea  name="Travels[form_sonstige_inweise]" ><?=((!empty($old_data['form_sonstige_inweise'])?$old_data['form_sonstige_inweise']:""))?></textarea>
                     </div>
                 </div>
                 <div class="form_line standart_radio">
@@ -302,7 +314,8 @@
                         Freie Plätze
                     </div>
                     <div class="form_input_1">
-                        <div class="input">1</div>
+                        <? $form_freie_platze =  ((!empty($old_data['form_freie_platze'])?$old_data['form_freie_platze']:"1"))?>
+                        <div class="input"><?=$form_freie_platze?></div>
                         <ul class="search_ul">
                             <li >1</li>
                             <li >2</li>
@@ -311,7 +324,7 @@
                             <li >5</li>
 
                         </ul>
-                        <input type="hidden" class="" name="Travels[form_freie_platze]" value="5" id="" placeholder="">
+                        <input type="hidden" class="" name="Travels[form_freie_platze]" value="<?=$form_freie_platze?>" id="" placeholder="">
 
                     </div>
 
@@ -319,7 +332,8 @@
                         Gepäckstücke
                     </div>
                     <div class="form_input_2">
-                        <div class="input">1</div>
+                        <? $form_gepack =  ((!empty($old_data['form_gepack'])?$old_data['form_gepack']:"1"))?>
+                        <div class="input"><?=$form_gepack?></div>
                         <ul class="search_ul">
                             <li >1</li>
                             <li >2</li>
@@ -327,7 +341,7 @@
                             <li >4</li>
                             <li >5</li>
                         </ul>
-                        <input type="hidden" class="" name="Travels[form_gepack]" value="5" id="" placeholder="">
+                        <input type="hidden" class="" name="Travels[form_gepack]" value="<?=$form_gepack?>" id="" placeholder="">
                     </div>
                 </div>
 

@@ -4,6 +4,6 @@
 
 ?>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,'old_data'=>$old_data) ); ?>
 
 

@@ -2,6 +2,8 @@
 /* @var $this ReviewsController */
 /* @var $model Reviews */
 /* @var $form CActiveForm */
+//print_R($data);
+//echo 11;
 ?>
 <div class="center-block container_mid">
 <div class="form_message content_info add_form_info add_review_form">
@@ -23,10 +25,11 @@
         <?php echo $form->errorSummary($model); ?>
             </div>
         <?php $this->endWidget(); ?>
-        <form autocomplete="off" class="form_form" method="post" id="eventForm" onsubmit="return validate_form(this)">
+        <form autocomplete="off" action="" class="form_form" method="post" id="eventForm" onsubmit="return validate_form(this)">
             <input name="Reviews[user_vouter]" id="Reviews_user_vouter" value="<? echo Yii::app()->user->id?>" type="hidden">
             <input name="Reviews[user_receiver]" id="Reviews_user_vouter" value="<?=$_GET["ur"]?>" type="hidden">
-
+<input type="hidden" name="t2" value="<?=((!empty($_GET['t2'])?$_GET['t2']:"0"))?>">
+<input type="hidden" name="Reviews[id]" value="<?=$data["id"]?>">
 
             <div class="form_line">
                 <div class="form_label">
@@ -42,11 +45,11 @@
                             <td><label for="n5">5</label></td>
                         </tr>
                         <tr>
-                            <td><input id="n1" value="1" type="radio" name="Reviews[vote]"></td>
-                            <td><input id="n2"  value="2"  type="radio" name="Reviews[vote]"></td>
-                            <td><input id="n3"  value="3"  type="radio" name="Reviews[vote]"></td>
-                            <td><input id="n4"  value="4"  type="radio" name="Reviews[vote]"></td>
-                            <td><input id="n5" value="5"  checked type="radio" name="Reviews[vote]"></td>
+                            <td><input id="n1" value="1"   <?=(($data["vote"]==1)?"checked":"")?> type="radio" name="Reviews[vote]"></td>
+                            <td><input id="n2"  value="2"   <?=(($data["vote"]==2)?"checked":"")?>  type="radio" name="Reviews[vote]"></td>
+                            <td><input id="n3"  value="3"   <?=(($data["vote"]==3)?"checked":"")?>  type="radio" name="Reviews[vote]"></td>
+                            <td><input id="n4"  value="4"   <?=(($data["vote"]==4)?"checked":"")?>  type="radio" name="Reviews[vote]"></td>
+                            <td><input id="n5" value="5" <?=((empty($data["vote"])?"checked":""))?> <?=(($data["vote"]==5)?"checked":"")?> type="radio" name="Reviews[vote]"></td>
                         </tr>
 
                     </table>
@@ -59,7 +62,7 @@
                    Message
                 </div>
                 <div class="form_input_1">
-                    <textarea name="Reviews[text]"></textarea>
+                    <textarea name="Reviews[text]"><?=$data['text']?></textarea>
                 </div>
             </div>
 <br>
